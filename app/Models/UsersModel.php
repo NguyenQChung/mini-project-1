@@ -6,6 +6,12 @@ use CodeIgniter\Model;
 
 class UsersModel extends Model
 {
+
+    public function findByEmail($email)
+    {
+        // Thực hiện truy vấn để tìm người dùng theo email
+        return $this->where('email', $email)->first();
+    }
     protected $table = 'users';
     protected $primaryKey = 'id';
     protected $useAutoIncrement = true;

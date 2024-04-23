@@ -14,15 +14,18 @@ class Login extends BaseController
     }
     public function do_Login()
     {
+        $userModel = new UsersModel();
+
+        // Lấy dữ liệu từ form đăng nhập
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
 
-        // Xác thực người dùng
-        if ($this->auth->attempt($email, $password)) {
+        // Kiểm tra xác thực
+        if ($this->authenticate($email, $password)) {
             // Đăng nhập thành công, kiểm tra vai trò
-            $user = $this->auth->user();
+            $role = $this->checkUserRole($email);
 
-            // Chuyển hướng người dùng đến trang chính
+            // Chuyển hướng đến trang chính
             return redirect()->to('/Home');
         } else {
             // Đăng nhập thất bại, hiển thị thông báo lỗi
@@ -31,16 +34,30 @@ class Login extends BaseController
         }
     }
 
-    public function checkRole()
+    protected function authenticate($email, $password)
     {
-        // Kiểm tra xem người dùng có quyền manager hay không
-        if ($this->auth->check() && $this->auth->inGroup('manager')) {
-            // Người dùng có vai trò manager
-            // Thực hiện các hành động dành riêng cho vai trò manager
+        // Lấy thông tin người dùng từ cơ sở dữ liệu
+        $userModel = new UsersModel();
+        $user = $userModel->findByEmail($email);
+
+        // Kiểm tra xác thực mật khẩu
+        if ($user && password_verify($password, $user['password'])) {
+            // Xác thực thành công
+            return true;
         } else {
-            // Người dùng không có vai trò manager
-            // Thực hiện các hành động khác
+            // Xác thực thất bại
+            return false;
         }
+    }
+
+    protected function checkUserRole($email)
+    {
+        // Lấy thông tin người dùng từ cơ sở dữ liệu
+        $userModel = new UsersModel();
+        $user = $userModel->findByEmail($email);
+
+        // Kiểm tra vai trò của người dùng
+        return $user['role']; // Giả sử vai trò được lưu trong cột 'role'
     }
 }
 
