@@ -13,7 +13,8 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="<?= base_url('dist/img/user2-160x160.jpg') ?>" class="img-circle elevation-2" alt="User Image">
+                <img src="<?= base_url('dist/img/user2-160x160.jpg') ?>" class="img-circle elevation-2"
+                    alt="User Image">
             </div>
             <div class="info">
                 <a href="#" class="d-block">Alexander Pierce</a>
@@ -51,19 +52,25 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="<?= base_url('Login') ?>" class="nav-link d-flex justify-content-center">
+                    <a href="<?= base_url('login') ?>" class="nav-link d-flex justify-content-center">
                         <button class="btn btn-primary btn-block">
                             Login
                         </button>
                     </a>
                 </li>
                 <li class="">
-                    <a href="<?= base_url('Register') ?>" class="nav-link d-flex justify-content-center">
+                    <a href="<?= base_url('register') ?>" class="nav-link d-flex justify-content-center">
                         <button class="btn btn-primary btn-block">
                             Register
                         </button>
                     </a>
                 </li>
+                <li class="">
+                    <a href="<?= base_url('logout') ?>" class="nav-link d-flex justify-content-center">
+                        <button class="btn btn-primary btn-block">
+                            Logout
+                        </button>
+                    </a>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

@@ -59,5 +59,14 @@ class Login extends BaseController
         // Kiểm tra vai trò của người dùng
         return $user['role']; // Giả sử vai trò được lưu trong cột 'role'
     }
+
+    public function logout()
+    {
+        // Xóa tất cả các session của người dùng để đăng xuất
+        session()->destroy();
+
+        // Chuyển hướng đến trang đăng nhập
+        return redirect()->to('/login');
+    }
 }
 
