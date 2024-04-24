@@ -37,3 +37,271 @@ in APPPATH/Config/Routes.php on line 18.
  9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
 INFO - 2024-04-23 10:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-04-23 10:04:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 10:19:30 --> ErrorException: Undefined variable $user
+[Method: GET, Route: Home]
+in APPPATH/Views/inc/sidebar.php on line 20.
+ 1 APPPATH/Views/inc/sidebar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php', 20)
+ 2 APPPATH/Views/Home.php(2): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 6 APPPATH/Controllers/Home.php(9): view('Home')
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-23 10:20:24 --> ErrorException: Undefined property: App\Controllers\Login::$session
+[Method: POST, Route: login]
+in APPPATH/Controllers/Login.php on line 45.
+ 1 APPPATH/Controllers/Login.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$session', '/Users/chungnguyen/Documents/project/mini-project-1/app/Controllers/Login.php', 45)
+ 2 APPPATH/Controllers/Login.php(24): App\Controllers\Login->authenticate('admin@gmail.com', 'admin')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Login->do_Login()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-23 10:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 10:22:38 --> ErrorException: Attempt to read property "id" on array
+[Method: POST, Route: login]
+in APPPATH/Controllers/Login.php on line 55.
+ 1 APPPATH/Controllers/Login.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', '/Users/chungnguyen/Documents/project/mini-project-1/app/Controllers/Login.php', 55)
+ 2 APPPATH/Controllers/Login.php(32): App\Controllers\Login->authenticate('admin@gmail.com', 'admin')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Login->do_Login()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-23 10:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 10:24:24 --> ErrorException: Undefined variable $user
+[Method: GET, Route: Home]
+in APPPATH/Views/inc/sidebar.php on line 20.
+ 1 APPPATH/Views/inc/sidebar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php', 20)
+ 2 APPPATH/Views/Home.php(2): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 6 APPPATH/Controllers/Home.php(9): view('Home')
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-23 10:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 10:31:59 --> Error: Class "UsersModel" not found
+[Method: GET, Route: Home]
+in APPPATH/Views/inc/sidebar.php on line 23.
+ 1 APPPATH/Views/Home.php(2): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 5 APPPATH/Controllers/Home.php(9): view('Home')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-23 10:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 10:36:15 --> Error: Class "UsersModel" not found
+[Method: GET, Route: Home]
+in APPPATH/Views/inc/sidebar.php on line 23.
+ 1 APPPATH/Views/Home.php(2): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 5 APPPATH/Controllers/Home.php(9): view('Home')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-23 10:36:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 10:36:21 --> Error: Class "UsersModel" not found
+[Method: GET, Route: Home]
+in APPPATH/Views/inc/sidebar.php on line 23.
+ 1 APPPATH/Views/Home.php(2): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 5 APPPATH/Controllers/Home.php(9): view('Home')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-23 10:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 10:36:34 --> Error: Class "UsersModel" not found
+[Method: GET, Route: Home]
+in APPPATH/Views/inc/sidebar.php on line 23.
+ 1 APPPATH/Views/Home.php(2): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 5 APPPATH/Controllers/Home.php(9): view('Home')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-23 10:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 10:43:41 --> Error: Class "UsersModel" not found
+[Method: GET, Route: Home]
+in APPPATH/Views/inc/sidebar.php on line 23.
+ 1 APPPATH/Views/Home.php(2): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 5 APPPATH/Controllers/Home.php(9): view('Home', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-23 10:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 10:43:43 --> Error: Class "UsersModel" not found
+[Method: GET, Route: Home]
+in APPPATH/Views/inc/sidebar.php on line 23.
+ 1 APPPATH/Views/Home.php(2): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 5 APPPATH/Controllers/Home.php(9): view('Home', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-23 10:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 10:44:27 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: Home]
+in APPPATH/Views/inc/sidebar.php on line 29.
+ 1 APPPATH/Views/inc/sidebar.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php', 29)
+ 2 APPPATH/Views/Home.php(2): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 6 APPPATH/Controllers/Home.php(9): view('Home', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-23 10:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 10:53:34 --> ErrorException: Attempt to read property "name" on array
+[Method: GET, Route: Home]
+in APPPATH/Views/inc/sidebar.php on line 20.
+ 1 APPPATH/Views/inc/sidebar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php', 20)
+ 2 APPPATH/Views/Home.php(2): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 6 APPPATH/Controllers/Home.php(9): view('Home', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-23 10:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 10:56:06 --> ErrorException: Attempt to read property "name" on array
+[Method: GET, Route: Home]
+in APPPATH/Views/inc/sidebar.php on line 20.
+ 1 APPPATH/Views/inc/sidebar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php', 20)
+ 2 APPPATH/Views/Home.php(2): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 6 APPPATH/Controllers/Home.php(9): view('Home', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-23 10:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 10:58:25 --> ErrorException: Attempt to read property "name" on array
+[Method: GET, Route: Home]
+in APPPATH/Views/inc/sidebar.php on line 20.
+ 1 APPPATH/Views/inc/sidebar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php', 20)
+ 2 APPPATH/Views/Home.php(2): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 6 APPPATH/Controllers/Home.php(9): view('Home', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-23 10:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 10:58:27 --> ErrorException: Attempt to read property "name" on array
+[Method: GET, Route: Home]
+in APPPATH/Views/inc/sidebar.php on line 20.
+ 1 APPPATH/Views/inc/sidebar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php', 20)
+ 2 APPPATH/Views/Home.php(2): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 6 APPPATH/Controllers/Home.php(9): view('Home', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-23 10:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 11:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 11:00:45 --> ErrorException: Attempt to read property "name" on array
+[Method: GET, Route: Home]
+in APPPATH/Views/inc/sidebar.php on line 22.
+ 1 APPPATH/Views/inc/sidebar.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php', 22)
+ 2 APPPATH/Views/Home.php(2): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 6 APPPATH/Controllers/Home.php(9): view('Home', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')

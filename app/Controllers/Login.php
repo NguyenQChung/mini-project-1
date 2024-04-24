@@ -3,9 +3,17 @@
 namespace App\Controllers;
 
 use App\Models\UsersModel;
+use CodeIgniter\Session\Session;
 
 class Login extends BaseController
 {
+    protected $session;
+
+    public function __construct()
+    {
+        // Khởi tạo đối tượng Session
+        $this->session = session();
+    }
 
     public function index()
     {
@@ -16,48 +24,31 @@ class Login extends BaseController
     {
         $userModel = new UsersModel();
 
-        // Lấy dữ liệu từ form đăng nhập
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
 
-        // Kiểm tra xác thực
-        if ($this->authenticate($email, $password)) {
-            // Đăng nhập thành công, kiểm tra vai trò
-            $role = $this->checkUserRole($email);
+        if ($email && $password) {
+            // Tìm người dùng dựa trên email
+            $result = $userModel->where('email', $email)->first();
 
-            // Chuyển hướng đến trang chính
-            return redirect()->to('/Home');
+            if ($result) {
+                // So sánh mật khẩu
+                if (password_verify($password, $result['password'])) {
+                    // Khởi tạo session
+                    $this->session->set('user', $result);
+                    // Lấy ID của người dùng từ đối tượng $result
+                    $userId = $result['id'];
+                    session()->set('updateId', $userId);
+                    return redirect()->to('/Home');
+                } else {
+                    echo 'Sai tài khoản hoặc mật khẩu!';
+                }
+            } else {
+                echo 'Sai tài khoản hoặc mật khẩu!';
+            }
         } else {
-            // Đăng nhập thất bại, hiển thị thông báo lỗi
-            session()->setFlashdata('error', 'Invalid email or password');
-            return redirect()->back()->withInput();
+            echo 'Vui lòng nhập email và mật khẩu.';
         }
-    }
-
-    protected function authenticate($email, $password)
-    {
-        // Lấy thông tin người dùng từ cơ sở dữ liệu
-        $userModel = new UsersModel();
-        $user = $userModel->findByEmail($email);
-
-        // Kiểm tra xác thực mật khẩu
-        if ($user && password_verify($password, $user['password'])) {
-            // Xác thực thành công
-            return true;
-        } else {
-            // Xác thực thất bại
-            return false;
-        }
-    }
-
-    protected function checkUserRole($email)
-    {
-        // Lấy thông tin người dùng từ cơ sở dữ liệu
-        $userModel = new UsersModel();
-        $user = $userModel->findByEmail($email);
-
-        // Kiểm tra vai trò của người dùng
-        return $user['role']; // Giả sử vai trò được lưu trong cột 'role'
     }
 
     public function logout()

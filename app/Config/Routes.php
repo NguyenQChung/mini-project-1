@@ -16,3 +16,5 @@ $routes->get('/register', 'Register::index');
 $routes->get('/tickets', 'Tickets::index');
 
 $routes->get('/logout', 'Login::logout');
+
+$routes->get('test', 'test::index');

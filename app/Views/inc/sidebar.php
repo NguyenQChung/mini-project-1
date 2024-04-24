@@ -17,7 +17,12 @@
                     alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">Alexander Pierce</a>
+
+                <a href="#" class="d-block">
+                    <div class="info">
+                        <a href="#" class="d-block"><?= $user ? $user['name'] : 'Unknown User' ?></a>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -46,7 +51,7 @@
                         </p>
                     </a>
                 <li class="nav-item">
-                    <a href="Tickets" class="nav-link">
+                    <a href="tickets" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Tickets</p>
                     </a>

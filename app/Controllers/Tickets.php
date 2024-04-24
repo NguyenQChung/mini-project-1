@@ -6,6 +6,6 @@ class Tickets extends BaseController
 {
     public function index(): string
     {
-        return view('examples/tickets');
+        return view('examples/tickets', ['user' => $this->user]);
     }
 }

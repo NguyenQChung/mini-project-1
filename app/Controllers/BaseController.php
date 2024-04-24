@@ -8,6 +8,7 @@ use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
+use App\Models\UsersModel;
 
 /**
  * Class BaseController
@@ -21,6 +22,20 @@ use Psr\Log\LoggerInterface;
  */
 abstract class BaseController extends Controller
 {
+    protected $user;
+
+    public function __construct()
+    {
+        // Lấy thông tin người dùng từ session
+        $this->getUserInfo();
+    }
+
+    protected function getUserInfo()
+    {
+        $userId = session()->get('updateId');
+        $userModel = new UsersModel();
+        $this->user = $userModel->find($userId);
+    }
     /**
      * Instance of the main Request object.
      *
