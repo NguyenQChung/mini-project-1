@@ -18,3 +18,5 @@ $routes->get('/tickets', 'Tickets::index');
 $routes->get('/logout', 'Login::logout');
 
 $routes->get('test', 'test::index');
+
+$routes->get('/quanly', 'Quan_ly::index');

@@ -17,12 +17,11 @@
                     alt="User Image">
             </div>
             <div class="info">
-
-                <a href="#" class="d-block">
-                    <div class="info">
-                        <a href="#" class="d-block"><?= $user ? $user['name'] : 'Unknown User' ?></a>
-                    </div>
-                </a>
+                <?php if (isset($user) && isset($user['name'])): ?>
+                    <div class="info"><a href="#" class="d-block"><?= $user['name'] ?></a></div>
+                <?php else: ?>
+                    <div class="info"><a href="#" class="d-block">Unknown User</a></div>
+                <?php endif; ?>
             </div>
         </div>
 
@@ -54,6 +53,12 @@
                     <a href="tickets" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Tickets</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="quanly" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Quản Lý</p>
                     </a>
                 </li>
                 <li class="">
