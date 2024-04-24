@@ -22,32 +22,44 @@ class Login extends BaseController
     }
     public function do_Login()
     {
-        $userModel = new UsersModel();
-
-        $email = $this->request->getPost('email');
-        $password = $this->request->getPost('password');
-
-        if ($email && $password) {
-            // Tìm người dùng dựa trên email
-            $result = $userModel->where('email', $email)->first();
-
-            if ($result) {
-                // So sánh mật khẩu
-                if (password_verify($password, $result['password'])) {
-                    // Khởi tạo session
-                    $this->session->set('user', $result);
-                    // Lấy ID của người dùng từ đối tượng $result
-                    $userId = $result['id'];
-                    session()->set('updateId', $userId);
-                    return redirect()->to('/Home');
-                } else {
-                    echo 'Sai tài khoản hoặc mật khẩu!';
-                }
-            } else {
-                echo 'Sai tài khoản hoặc mật khẩu!';
-            }
+        $rules = $this->validate([
+            'email' => 'required|valid_email',
+            'password' => 'required',
+        ]);
+        if (!$rules) {
+            return view('examples/login', ['rules' => $this->validator]);
         } else {
-            echo 'Vui lòng nhập email và mật khẩu.';
+            $userModel = new UsersModel();
+
+            $email = $this->request->getPost('email');
+            $password = $this->request->getPost('password');
+
+            if ($email && $password) {
+                // Tìm người dùng dựa trên email
+                $result = $userModel->where('email', $email)->first();
+
+                if ($result) {
+                    // So sánh mật khẩu
+                    if (password_verify($password, $result['password'])) {
+                        // Khởi tạo session
+                        $this->session->set('user', $result);
+                        // Lấy ID của người dùng từ đối tượng $result
+                        $userId = $result['id'];
+                        session()->set('updateId', $userId);
+                        return redirect()->to('/Home');
+                    } else {
+                        // Lưu thông báo lỗi vào biến data
+                        $data['loginError'] = 'Sai mật khẩu!';
+                        // Trả về view login cùng với thông báo lỗi
+                        return view('examples/login', $data);
+                    }
+                } else {
+                    // Lưu thông báo lỗi vào biến data
+                    $data['loginError'] = 'Tài khoản không tồn tại !';
+                    // Trả về view login cùng với thông báo lỗi
+                    return view('examples/login', $data);
+                }
+            }
         }
     }
 
