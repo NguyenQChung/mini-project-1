@@ -6,7 +6,25 @@
         var fileName = input.files[0].name;
         var label = document.getElementById("avatar-label");
         label.innerText = fileName;
-    }
+    };
+    $(document).ready(function () {
+        $('body').on('click', '.pagination a', function (e) {
+            e.preventDefault();
+
+            var url = $(this).attr('href');
+            $.ajax({
+                url: url,
+                type: 'GET',
+                success: function (data) {
+                    // Cập nhật nội dung của trang với dữ liệu mới
+                    $('.content-wrapper').html($(data).find('.content-wrapper').html());
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log(textStatus, errorThrown);
+                }
+            });
+        });
+    });
 </script>
 <div class="content-wrapper">
     <section class="content">
@@ -110,22 +128,13 @@
                     </tbody>
                 </table>
             </div>
-            <div class="pagination justify-content-center">
+            <div class="d-flex justify-content-center align-items-center">
                 <ul class="pagination">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1">Previous</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                    </li>
+                    <?= $pager->links('gruop1', 'bs_pagination'); ?>
                 </ul>
             </div>
-            <!-- /.card-body -->
-        </div>
-        <!-- /.card -->
+
+            <!-- /.card -->
 
     </section>
     <!-- /.content -->

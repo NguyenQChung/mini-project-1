@@ -20,4 +20,7 @@ $routes->get('/logout', 'Login::logout');
 $routes->get('test', 'test::index');
 
 $routes->get('/quanly', 'Quan_ly::index');
+$routes->post('/quanly', 'Quan_ly::index');
+
 $routes->post('/saveUser', 'Quan_Ly::saveUser');
+$routes->post('/quanly/ajaxPagination', 'Quan_ly::ajaxPagination');

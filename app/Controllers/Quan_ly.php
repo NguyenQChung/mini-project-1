@@ -14,11 +14,11 @@ class Quan_ly extends BaseController
 
     public function index()
     {
-        $model = new UsersModel();
-        $data['users'] = $model->findAll();
+        $data['users'] = $this->user->orderBy('id', 'DESC')->paginate(5, 'gruop1');
+        $data['pager'] = $this->user->pager;
+
         return view('examples/Quan_Ly', $data);
     }
-
     public function saveUser()
     {
         $name = $this->request->getVar('name');
