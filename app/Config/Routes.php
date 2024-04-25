@@ -28,3 +28,6 @@ $routes->post('/quanly/ajaxPagination', 'Quan_ly::ajaxPagination');
 $routes->get('/getSingleUser/(:num)', 'Quan_ly::getSingleUser/$1');
 
 $routes->post('/updateUser', 'Quan_ly::updateUser');
+
+// $routes->post('/deleteUser/(:num)', 'Quan_ly::deleteUser/$1');
+$routes->post('/deleteUser', 'Quan_ly::deleteUser');

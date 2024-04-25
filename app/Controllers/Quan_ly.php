@@ -101,5 +101,13 @@ class Quan_ly extends BaseController
         return redirect()->to(base_url('quanly'));
     }
 
+    public function deleteUser()
+    {
+        $this->user = new UsersModel();
+        $id = $this->request->getVar('id');
+        $this->user->delete($id);
+        echo 1;
+
+    }
 }
 

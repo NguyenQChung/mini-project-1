@@ -2,7 +2,7 @@
 <?php include (APPPATH . 'Views/inc/sidebar.php'); ?>
 <!-- Main content -->
 <script>
-    var baseUrl = "<?php echo base_url('uploads/'); ?>";
+    var baseUrl = "<?php echo base_url(); ?>";
 </script>
 <div class="content-wrapper">
     <section class="content">
@@ -90,7 +90,7 @@
                                         </i>
                                         Edit
                                     </a>
-                                    <a class="btn btn-danger btn-sm" href="#">
+                                    <a class="btn btn-danger btn-sm delete" data-toggle="modal" href="#">
                                         <i class="fas fa-trash">
                                         </i>
                                         Delete

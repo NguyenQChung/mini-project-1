@@ -35,9 +35,25 @@ $(document).on('click', '.edit', function (e) {
             $(".updateUsername").val(res.name);
             $(".updateEmail").val(res.email);
             $(".updateId").val(res.id);
-            $(".updateAvatar").attr('src', baseUrl + res.avatar);
+            $(".updateAvatar").attr('src', baseUrl + "uploads/" + res.avatar);
             $(".updateRole").val(res.role);
         }
     })
 
 });
+
+$(document).on('click', '.delete', function (e) {
+    e.preventDefault();
+    var id = $(this).closest('tr').find('td:eq(0)').text();
+
+    $.ajax({
+        url: baseUrl + "deleteUser",
+        method: "POST",
+        data: { id: id },
+        success: function (res) {
+            if (res.includes("1")) {
+                window.location.reload();
+            }
+        }
+    })
+})
