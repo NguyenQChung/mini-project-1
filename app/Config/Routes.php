@@ -24,3 +24,5 @@ $routes->post('/quanly', 'Quan_ly::index');
 
 $routes->post('/saveUser', 'Quan_Ly::saveUser');
 $routes->post('/quanly/ajaxPagination', 'Quan_ly::ajaxPagination');
+
+$routes->get('/getSingleUser/(:num)', 'Quan_Ly::getSingleUser/$1');

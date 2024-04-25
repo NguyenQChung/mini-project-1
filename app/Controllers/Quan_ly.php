@@ -6,13 +6,13 @@ use App\Models\UsersModel;
 
 class Quan_ly extends BaseController
 {
-    
+
     public function index()
     {
         $dataUsers = new UsersModel();
         $data['users'] = $dataUsers->orderBy('id', 'DESC')->paginate(5, 'gruop1');
         $data['pager'] = $dataUsers->pager;
-        $data['user']=$this->user;
+        $data['user'] = $this->user;
 
         return view('examples/Quan_Ly', $data);
     }
@@ -56,5 +56,12 @@ class Quan_ly extends BaseController
             session()->setFlashdata('error', 'No file uploaded');
             return redirect()->to(base_url('quanly'));
         }
+    }
+
+    public function getSingleUser($id)
+    {
+        $this->user = new UsersModel();
+        $data = $this->user->find($id); // Sử dụng phương thức find() để lấy dữ liệu của user có id tương ứng
+        echo json_encode($data);
     }
 }

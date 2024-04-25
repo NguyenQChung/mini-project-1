@@ -25,6 +25,25 @@
             });
         });
     });
+    $(document).on('click', '.edit', function (e) {
+        e.preventDefault();
+        var id = $(this).closest('tr').find('td:eq(0)').text();
+
+        $.ajax({
+            url: "<?php echo base_url(); ?>" + "getSingleUser/" + id,
+            method: "GET",
+            success: function (result) {
+                console.log(JSON.parse(result));
+                var res = (JSON.parse(result));
+                $(".updateUsername").val(res.name);
+                $(".updateEmail").val(res.email);
+                $(".updateId").val(res.id);
+                $(".updateAvatar").val(res.avatar);
+                $(".updateRole").val(res.role);
+            }
+        })
+
+    });
 </script>
 <div class="content-wrapper">
     <section class="content">
@@ -107,13 +126,8 @@
                                 </td>
                                 <td><?= $user['role'] ?></td>
                                 <td class="project-actions text-right">
-                                    <a class="btn btn-primary btn-sm" href="#">
-                                        <i class="fas fa-folder">
-                                        </i>
-                                        View
-                                    </a>
-                                    <a class="btn btn-info btn-sm" href="#">
-                                        <i class="fas fa-pencil-alt">
+                                    <a href="#editEmployeeModal" class="btn btn-info btn-sm edit" data-toggle="modal">
+                                        <i data-toggle="tooltip" class="fas fa-pencil-alt" title="Edit">
                                         </i>
                                         Edit
                                     </a>
@@ -139,6 +153,7 @@
     </section>
     <!-- /.content -->
 </div>
+<!-- Form Add User -->
 <div id="addEmployeeModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -178,6 +193,57 @@
                     <input type="button" class="btn btn-default" name="submit" data-dismiss="modal" value="Cancel">
                     <input type="submit" class="btn btn-success" value="Add">
                 </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Form Edit User -->
+<div id="editEmployeeModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form action="<?php echo base_url() . "updateUser" ?>" method="POST" enctype="multipart/form-data">
+                <div class="modal-header">
+                    <h4 class="modal-title">Edit Employee</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="updateId" class="updateId">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control updateUsername" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" class="form-control updateEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="avatar" class="form-label">Ảnh đại diện:</label>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" name="avatar" id="avatar" class="custom-file-input"
+                                    onchange="updateFileName(this)">
+                                <label class="custom-file-label" for="avatar" id="avatar-label">Chọn tệp</label>
+                            </div>
+                        </div>
+                        <?php if ($user['avatar']): ?>
+                            <img src="<?= base_url('uploads/' . $user['avatar']) ?>" alt="User Image" class="img-thumbnail"
+                                style="width: 200px;">
+                        <?php endif; ?>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Role:</label>
+                        <select class="form-control updateRole" id="role" name="role">
+                            <option value="employee">Employee</option>
+                            <option value="manager">Manager</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <input type="button" name="submit" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-info" value="Save">
+                </div>
+
             </form>
         </div>
     </div>
