@@ -64,4 +64,42 @@ class Quan_ly extends BaseController
         $data = $this->user->find($id); // Sử dụng phương thức find() để lấy dữ liệu của user có id tương ứng
         echo json_encode($data);
     }
+
+    public function updateUser()
+    {
+        $this->userModel = new UsersModel();
+        // Nhận dữ liệu từ biểu mẫu gửi đi
+        $userId = $this->request->getPost('updateId');
+        $name = $this->request->getPost('name');
+        $email = $this->request->getPost('email');
+        $role = $this->request->getPost('role');
+
+        // Kiểm tra xem người dùng có tải lên ảnh mới không
+        $newAvatar = $this->request->getFile('avatar');
+        if ($newAvatar->isValid() && !$newAvatar->hasMoved()) {
+            // Lưu ảnh mới và lấy tên file
+            $avatarName = $newAvatar->getRandomName();
+            $newAvatar->move(ROOTPATH . 'public/uploads', $avatarName);
+
+            // Cập nhật thông tin người dùng trong cơ sở dữ liệu
+            $this->userModel->update($userId, [
+                'name' => $name,
+                'email' => $email,
+                'avatar' => $avatarName,
+                'role' => $role
+            ]);
+        } else {
+            // Không có ảnh mới được tải lên, chỉ cập nhật các thông tin khác
+            $this->userModel->update($userId, [
+                'name' => $name,
+                'email' => $email,
+                'role' => $role
+            ]);
+        }
+
+        // Chuyển hướng người dùng về trang danh sách người dùng hoặc trang khác
+        return redirect()->to(base_url('quanly'));
+    }
+
 }
+

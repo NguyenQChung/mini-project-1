@@ -28,6 +28,7 @@ abstract class BaseController extends Controller
     {
         // Lấy thông tin người dùng từ session
         $this->getUserInfo();
+        helper(['url']);
     }
 
     protected function getUserInfo()
