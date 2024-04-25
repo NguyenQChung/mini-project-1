@@ -522,3 +522,356 @@ INFO - 2024-04-25 04:11:30 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-04-25 04:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-04-25 04:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-04-25 04:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:14:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:29:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-25 04:39:22 --> Error: Cannot use object of type App\Models\UsersModel as array
+[Method: GET, Route: quanly]
+in APPPATH/Views/inc/sidebar.php on line 20.
+ 1 APPPATH/Views/examples/Quan_Ly.php(2): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/examples/Quan_Ly.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('examples/Quan_Ly', [], true)
+ 5 APPPATH/Controllers/Quan_ly.php(20): view('examples/Quan_Ly', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Quan_ly->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quan_ly))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-25 04:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-25 04:39:59 --> ErrorException: Undefined variable $users
+[Method: GET, Route: quanly]
+in APPPATH/Views/examples/Quan_Ly.php on line 94.
+ 1 APPPATH/Views/examples/Quan_Ly.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/examples/Quan_Ly.php', 94)
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/examples/Quan_Ly.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('examples/Quan_Ly', [], true)
+ 5 APPPATH/Controllers/Quan_ly.php(20): view('examples/Quan_Ly', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Quan_ly->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quan_ly))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-25 04:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 04:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-25 04:50:16 --> Error: Cannot use object of type App\Models\UsersModel as array
+[Method: GET, Route: quanly]
+in APPPATH/Views/inc/sidebar.php on line 20.
+ 1 APPPATH/Views/examples/Quan_Ly.php(2): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/examples/Quan_Ly.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('examples/Quan_Ly', [], true)
+ 5 APPPATH/Controllers/Quan_ly.php(20): view('examples/Quan_Ly', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Quan_ly->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quan_ly))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-25 04:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-25 04:54:47 --> Error: Cannot use object of type App\Models\UsersModel as array
+[Method: GET, Route: quanly]
+in APPPATH/Views/inc/sidebar.php on line 20.
+ 1 APPPATH/Views/examples/Quan_Ly.php(2): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/examples/Quan_Ly.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('examples/Quan_Ly', [], true)
+ 5 APPPATH/Controllers/Quan_ly.php(19): view('examples/Quan_Ly', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Quan_ly->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quan_ly))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-25 04:58:04 --> Error: Cannot use object of type App\Models\UsersModel as array
+[Method: GET, Route: quanly]
+in APPPATH/Views/inc/sidebar.php on line 20.
+ 1 APPPATH/Views/examples/Quan_Ly.php(2): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/examples/Quan_Ly.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('examples/Quan_Ly', [], true)
+ 5 APPPATH/Controllers/Quan_ly.php(20): view('examples/Quan_Ly', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Quan_ly->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quan_ly))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-25 05:10:45 --> ErrorException: Attempt to read property "pager" on array
+[Method: GET, Route: quanly]
+in APPPATH/Controllers/Quan_ly.php on line 18.
+ 1 APPPATH/Controllers/Quan_ly.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "pager" on array', '/Users/chungnguyen/Documents/project/mini-project-1/app/Controllers/Quan_ly.php', 18)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Quan_ly->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quan_ly))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-25 06:10:41 --> Error: Cannot use object of type App\Models\UsersModel as array
+[Method: GET, Route: quanly]
+in APPPATH/Views/inc/sidebar.php on line 20.
+ 1 APPPATH/Views/examples/Quan_Ly.php(2): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/examples/Quan_Ly.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('examples/Quan_Ly', [], true)
+ 5 APPPATH/Controllers/Quan_ly.php(20): view('examples/Quan_Ly', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Quan_ly->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quan_ly))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-25 06:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-25 06:21:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Quan_ly::$user is deprecated in APPPATH/Controllers/Quan_ly.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\Quan_ly->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-25 06:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-25 06:21:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Quan_ly::$user is deprecated in APPPATH/Controllers/Quan_ly.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\Quan_ly->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-25 06:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-25 06:22:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Quan_ly::$user is deprecated in APPPATH/Controllers/Quan_ly.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\Quan_ly->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-25 06:22:29 --> TypeError: array_merge(): Argument #1 must be of type array, null given
+[Method: GET, Route: quanly]
+in APPPATH/Controllers/Quan_ly.php on line 25.
+ 1 APPPATH/Controllers/Quan_ly.php(25): array_merge(null, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Quan_ly->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quan_ly))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-25 06:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-25 06:24:53 --> ErrorException: Undefined property: App\Controllers\Home::$user
+[Method: GET, Route: Home]
+in APPPATH/Controllers/Home.php on line 10.
+ 1 APPPATH/Controllers/Home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$user', '/Users/chungnguyen/Documents/project/mini-project-1/app/Controllers/Home.php', 10)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-25 06:26:11 --> TypeError: array_merge(): Argument #1 must be of type array, App\Models\UsersModel given
+[Method: GET, Route: quanly]
+in APPPATH/Controllers/Quan_ly.php on line 25.
+ 1 APPPATH/Controllers/Quan_ly.php(25): array_merge(Object(App\Models\UsersModel), [...])
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Quan_ly->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quan_ly))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-25 06:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:41:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:41:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:41:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-25 06:46:11 --> Error: Cannot use object of type App\Models\UsersModel as array
+[Method: GET, Route: quanly]
+in APPPATH/Controllers/Quan_ly.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Quan_ly->index()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quan_ly))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-25 06:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-25 06:48:07 --> Error: Cannot use object of type App\Models\UsersModel as array
+[Method: GET, Route: quanly]
+in APPPATH/Controllers/Quan_ly.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Quan_ly->index()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quan_ly))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-25 06:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-25 06:48:39 --> ErrorException: Undefined array key "user"
+[Method: GET, Route: quanly]
+in APPPATH/Controllers/Quan_ly.php on line 16.
+ 1 APPPATH/Controllers/Quan_ly.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', '/Users/chungnguyen/Documents/project/mini-project-1/app/Controllers/Quan_ly.php', 16)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Quan_ly->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quan_ly))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-25 06:48:49 --> ParseError: syntax error, unexpected identifier "users", expecting "]"
+[Method: GET, Route: quanly]
+in APPPATH/Controllers/Quan_ly.php on line 17.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/chungnguyen/Documents/project/mini-project-1/app/Controllers/Quan_ly.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Quan_ly')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Quan_ly')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Quan_ly', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-25 06:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-25 06:50:08 --> Error: Call to a member function orderBy() on array
+[Method: GET, Route: quanly]
+in APPPATH/Controllers/Quan_ly.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Quan_ly->index()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quan_ly))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-25 06:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-25 06:54:03 --> Error: Call to a member function orderBy() on array
+[Method: GET, Route: quanly]
+in APPPATH/Controllers/Quan_ly.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Quan_ly->index()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quan_ly))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-25 06:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 06:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-25 06:58:14 --> ErrorException: Undefined variable $users
+[Method: GET, Route: quanly]
+in APPPATH/Views/examples/Quan_Ly.php on line 94.
+ 1 APPPATH/Views/examples/Quan_Ly.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/examples/Quan_Ly.php', 94)
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/examples/Quan_Ly.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('examples/Quan_Ly', [], true)
+ 5 APPPATH/Controllers/Quan_ly.php(15): view('examples/Quan_Ly', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Quan_ly->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quan_ly))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-25 06:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 07:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-25 07:00:08 --> ErrorException: Undefined variable $users
+[Method: GET, Route: quanly]
+in APPPATH/Views/examples/Quan_Ly.php on line 94.
+ 1 APPPATH/Views/examples/Quan_Ly.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/examples/Quan_Ly.php', 94)
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/examples/Quan_Ly.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('examples/Quan_Ly', [], true)
+ 5 APPPATH/Controllers/Quan_ly.php(15): view('examples/Quan_Ly', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Quan_ly->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quan_ly))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-25 07:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

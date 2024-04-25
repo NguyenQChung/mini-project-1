@@ -19,11 +19,13 @@
             <div class="info">
                 <?php if (isset($user) && isset($user['name'])): ?>
                     <div class="info"><a href="#" class="d-block"><?= $user['name'] ?></a></div>
+                    <div class="role" style=" color: #c2c7d0;">Role : <?= $user['role'] ?></div>
                 <?php else: ?>
                     <div class="info"><a href="#" class="d-block">Unknown User</a></div>
                 <?php endif; ?>
             </div>
         </div>
+
 
         <!-- SidebarSearch Form -->
         <div class="form-inline">

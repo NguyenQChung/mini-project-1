@@ -6,16 +6,13 @@ use App\Models\UsersModel;
 
 class Quan_ly extends BaseController
 {
-    public function __construct()
-    {
-        helper(['url']);
-        $this->user = new UsersModel();
-    }
-
+    
     public function index()
     {
-        $data['users'] = $this->user->orderBy('id', 'DESC')->paginate(5, 'gruop1');
-        $data['pager'] = $this->user->pager;
+        $dataUsers = new UsersModel();
+        $data['users'] = $dataUsers->orderBy('id', 'DESC')->paginate(5, 'gruop1');
+        $data['pager'] = $dataUsers->pager;
+        $data['user']=$this->user;
 
         return view('examples/Quan_Ly', $data);
     }
