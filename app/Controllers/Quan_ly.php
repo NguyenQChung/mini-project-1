@@ -9,7 +9,10 @@ class Quan_ly extends BaseController
 
     public function index()
     {
-        dd($this->user);
+
+        if ($this->user['role'] !== 'manager') {
+            return view('Home', ['user' => $this->user]);
+        }
         $dataUsers = new UsersModel();
         $data['users'] = $dataUsers->orderBy('id', 'DESC')->paginate(5, 'gruop1');
         $data['pager'] = $dataUsers->pager;

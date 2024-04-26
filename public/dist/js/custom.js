@@ -95,13 +95,13 @@ $(document).ready(function () {
         var id = $(this).closest('tr').find('td:eq(0)').text();
 
         Swal.fire({
-            title: "Are you sure?",
-            text: "You won't be able to revert this!",
+            title: "Bạn có chắc muốn xóa không ?",
+            text: "Sẽ không lấy lại được dữ liệu !",
             icon: "warning",
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
-            confirmButtonText: "Yes, delete it!"
+            confirmButtonText: "Xóa"
         }).then((result) => {
             if (result.isConfirmed) {
                 // Nếu người dùng xác nhận xóa
@@ -113,8 +113,8 @@ $(document).ready(function () {
                         if (res.includes("1")) {
                             // Hiển thị thông báo xóa thành công nếu cần
                             Swal.fire({
-                                title: "Deleted!",
-                                text: "Your file has been deleted.",
+                                title: "Đã Xóa",
+                                text: "Xóa Thành Công",
                                 icon: "success"
                             }).then(() => {
                                 // Sau khi xóa thành công, cập nhật lại dữ liệu người dùng
