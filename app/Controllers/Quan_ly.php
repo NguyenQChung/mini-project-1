@@ -16,6 +16,15 @@ class Quan_ly extends BaseController
 
         return view('examples/Quan_Ly', $data);
     }
+    public function dataUserTable()
+    {
+        $dataUsers = new UsersModel();
+        $data['users'] = $dataUsers->orderBy('id', 'DESC')->paginate(5, 'gruop1');
+        $data['pager'] = $dataUsers->pager;
+        $data['user'] = $this->user;
+
+        return view('examples/tables/user', $data);
+    }
     public function saveUser()
     {
         $name = $this->request->getVar('name');
@@ -45,17 +54,18 @@ class Quan_ly extends BaseController
                 ]);
 
                 session()->setFlashdata('success', 'Data inserted successfully');
-                return redirect()->to(base_url('quanly'));
+                echo '1';
             } else {
                 // Xử lý lỗi khi di chuyển tệp
                 session()->setFlashdata('error', 'Failed to upload file');
-                return redirect()->to(base_url('quanly'));
+
             }
         } else {
             // Xử lý khi không có tệp được tải lên
             session()->setFlashdata('error', 'No file uploaded');
-            return redirect()->to(base_url('quanly'));
+
         }
+
     }
 
     public function getSingleUser($id)
@@ -98,7 +108,7 @@ class Quan_ly extends BaseController
         }
 
         // Chuyển hướng người dùng về trang danh sách người dùng hoặc trang khác
-        return redirect()->to(base_url('quanly'));
+        echo '1';
     }
 
     public function deleteUser()
@@ -107,7 +117,6 @@ class Quan_ly extends BaseController
         $id = $this->request->getVar('id');
         $this->user->delete($id);
         echo 1;
-
     }
 }
 

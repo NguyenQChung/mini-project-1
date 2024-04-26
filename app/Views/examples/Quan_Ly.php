@@ -45,66 +45,68 @@
 
                 </div>
             </div>
-            <div class="card-body p-0">
-                <table class="table table-striped projects">
-                    <thead>
-                        <tr>
-                            <th style="width: 1%">
-                                ID
-                            </th>
-                            <th style="width: 20%">
-                                Name
-                            </th>
-                            <th style="width: 30%">
-                                Email
-                            </th>
-                            <th>
-                                Avatar
-                            </th>
-                            <th style="width: 8%" class="text-center">
-                                Role
-                            </th>
-                            <th style="width: 20%">
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach ($users as $user): ?>
+            <div id="user_table">
+                <div class="card-body p-0">
+                    <table class="table table-striped projects">
+                        <thead>
                             <tr>
-                                <td><?= $user['id'] ?></td>
-                                <td><?= $user['name'] ?></td>
-                                <td><?= $user['email'] ?></td>
-                                <td style="max-width: 150px;">
-                                    <?php if ($user['avatar'] == null) { ?>
-                                        <img src="<?php echo base_url('uploads/default.jpg') ?>"
-                                            class="rounded-circle img-fluid" style="max-width: 20%; height: auto;" />
-                                    <?php } else { ?>
-                                        <img src="<?php echo base_url('uploads/' . $user['avatar']) ?>"
-                                            class="rounded-circle img-fluid" style="max-width: 20%; height: auto;" />
-                                    <?php } ?>
-                                </td>
-                                <td><?= $user['role'] ?></td>
-                                <td class="project-actions text-right">
-                                    <a href="#editEmployeeModal" class="btn btn-info btn-sm edit" data-toggle="modal">
-                                        <i data-toggle="tooltip" class="fas fa-pencil-alt" title="Edit">
-                                        </i>
-                                        Edit
-                                    </a>
-                                    <a class="btn btn-danger btn-sm delete" data-toggle="modal" href="#">
-                                        <i class="fas fa-trash">
-                                        </i>
-                                        Delete
-                                    </a>
-                                </td>
+                                <th style="width: 1%">
+                                    ID
+                                </th>
+                                <th style="width: 20%">
+                                    Name
+                                </th>
+                                <th style="width: 30%">
+                                    Email
+                                </th>
+                                <th>
+                                    Avatar
+                                </th>
+                                <th style="width: 8%" class="text-center">
+                                    Role
+                                </th>
+                                <th style="width: 20%">
+                                </th>
                             </tr>
-                        <?php endforeach; ?>
-                    </tbody>
-                </table>
-            </div>
-            <div class="d-flex justify-content-center align-items-center">
-                <ul class="pagination">
-                    <?= $pager->links('gruop1', 'bs_pagination'); ?>
-                </ul>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($users as $user): ?>
+                                <tr>
+                                    <td><?= $user['id'] ?></td>
+                                    <td><?= $user['name'] ?></td>
+                                    <td><?= $user['email'] ?></td>
+                                    <td style="max-width: 150px;">
+                                        <?php if ($user['avatar'] == null) { ?>
+                                            <img src="<?php echo base_url('uploads/default.jpg') ?>"
+                                                class="rounded-circle img-fluid" style="max-width: 20%; height: auto;" />
+                                        <?php } else { ?>
+                                            <img src="<?php echo base_url('uploads/' . $user['avatar']) ?>"
+                                                class="rounded-circle img-fluid" style="max-width: 20%; height: auto;" />
+                                        <?php } ?>
+                                    </td>
+                                    <td><?= $user['role'] ?></td>
+                                    <td class="project-actions text-right">
+                                        <a href="#editEmployeeModal" class="btn btn-info btn-sm edit" data-toggle="modal">
+                                            <i data-toggle="tooltip" class="fas fa-pencil-alt" title="Edit">
+                                            </i>
+                                            Edit
+                                        </a>
+                                        <a class="btn btn-danger btn-sm delete" data-toggle="modal" href="#">
+                                            <i class="fas fa-trash">
+                                            </i>
+                                            Delete
+                                        </a>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <ul class="pagination">
+                        <?= $pager->links('gruop1', 'bs_pagination'); ?>
+                    </ul>
+                </div>
             </div>
 
             <!-- /.card -->

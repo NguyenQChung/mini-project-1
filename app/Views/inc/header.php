@@ -7,6 +7,7 @@
     <title>AdminLTE 3 | Dashboard</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
