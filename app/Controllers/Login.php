@@ -45,7 +45,9 @@ class Login extends BaseController
                         $this->session->set('user', $result);
                         // Lấy ID của người dùng từ đối tượng $result
                         $userId = $result['id'];
+                        $userRole = $result['role'];
                         session()->set('updateId', $userId);
+                        session()->set('updateRole', $userRole);
                         return redirect()->to('/Home');
                     } else {
                         // Lưu thông báo lỗi vào biến data

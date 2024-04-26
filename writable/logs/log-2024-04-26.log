@@ -238,3 +238,1203 @@ INFO - 2024-04-26 03:02:53 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-04-26 03:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-04-26 03:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-04-26 03:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 03:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 03:16:35 --> ErrorException: Undefined variable $userRole
+[Method: GET, Route: quanly]
+in APPPATH/Views/inc/sidebar.php on line 60.
+ 1 APPPATH/Views/inc/sidebar.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userRole', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php', 60)
+ 2 APPPATH/Views/examples/Quan_Ly.php(2): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/examples/Quan_Ly.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('examples/Quan_Ly', [], true)
+ 6 APPPATH/Controllers/Quan_ly.php(17): view('examples/Quan_Ly', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Quan_ly->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quan_ly))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 03:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 03:17:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 03:17:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 03:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 03:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 03:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 03:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 03:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 03:56:54 --> CodeIgniter\Filters\Exceptions\FilterException: "rolecheck" filter must have a matching alias defined.
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Filters/Filters.php on line 495.
+ 1 SYSTEMPATH/Filters/Filters.php(495): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('rolecheck')
+ 2 SYSTEMPATH/Filters/Filters.php(547): CodeIgniter\Filters\Filters->enableFilter('rolecheck', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-26 03:57:19 --> CodeIgniter\Filters\Exceptions\FilterException: "checkRole" filter must have a matching alias defined.
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Filters/Filters.php on line 495.
+ 1 SYSTEMPATH/Filters/Filters.php(495): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('checkRole')
+ 2 SYSTEMPATH/Filters/Filters.php(547): CodeIgniter\Filters\Filters->enableFilter('checkRole', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-26 04:03:06 --> Error: Class "App\Middleware\CheckRole" not found
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Filters/Filters.php on line 197.
+ 1 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('quanly', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:05:53 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-26 04:07:59 --> CodeIgniter\Filters\Exceptions\FilterException: "CheckRole" filter must have a matching alias defined.
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Filters/Filters.php on line 495.
+ 1 SYSTEMPATH/Filters/Filters.php(495): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('CheckRole')
+ 2 SYSTEMPATH/Filters/Filters.php(547): CodeIgniter\Filters\Filters->enableFilter('CheckRole', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:08:11 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:13:45 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:27:22 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:29:19 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:31:22 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:34:57 --> ErrorException: Undefined variable $user
+[Method: GET, Route: quanly]
+in APPPATH/Views/inc/sidebar.php on line 60.
+ 1 APPPATH/Views/inc/sidebar.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php', 60)
+ 2 APPPATH/Views/Home.php(2): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 6 APPPATH/Filters/CheckRole.php(36): view('Home')
+ 7 SYSTEMPATH/Filters/Filters.php(203): App\Filters\CheckRole->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 8 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 9 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('quanly', 'before')
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:38:32 --> ErrorException: Undefined variable $user
+[Method: GET, Route: quanly]
+in APPPATH/Views/inc/sidebar.php on line 60.
+ 1 APPPATH/Views/inc/sidebar.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php', 60)
+ 2 APPPATH/Views/Home.php(2): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 6 APPPATH/Filters/CheckRole.php(36): view('Home')
+ 7 SYSTEMPATH/Filters/Filters.php(203): App\Filters\CheckRole->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 8 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 9 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('quanly', 'before')
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:38:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:38:35 --> ErrorException: Undefined variable $user
+[Method: GET, Route: quanly]
+in APPPATH/Views/inc/sidebar.php on line 60.
+ 1 APPPATH/Views/inc/sidebar.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php', 60)
+ 2 APPPATH/Views/Home.php(2): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 6 APPPATH/Filters/CheckRole.php(36): view('Home')
+ 7 SYSTEMPATH/Filters/Filters.php(203): App\Filters\CheckRole->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 8 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 9 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('quanly', 'before')
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:38:36 --> ErrorException: Undefined variable $user
+[Method: GET, Route: quanly]
+in APPPATH/Views/inc/sidebar.php on line 60.
+ 1 APPPATH/Views/inc/sidebar.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php', 60)
+ 2 APPPATH/Views/Home.php(2): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 6 APPPATH/Filters/CheckRole.php(36): view('Home')
+ 7 SYSTEMPATH/Filters/Filters.php(203): App\Filters\CheckRole->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 8 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 9 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('quanly', 'before')
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:38:36 --> ErrorException: Undefined variable $user
+[Method: GET, Route: quanly]
+in APPPATH/Views/inc/sidebar.php on line 60.
+ 1 APPPATH/Views/inc/sidebar.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php', 60)
+ 2 APPPATH/Views/Home.php(2): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 6 APPPATH/Filters/CheckRole.php(36): view('Home')
+ 7 SYSTEMPATH/Filters/Filters.php(203): App\Filters\CheckRole->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 8 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 9 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('quanly', 'before')
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:38:36 --> ErrorException: Undefined variable $user
+[Method: GET, Route: quanly]
+in APPPATH/Views/inc/sidebar.php on line 60.
+ 1 APPPATH/Views/inc/sidebar.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php', 60)
+ 2 APPPATH/Views/Home.php(2): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 6 APPPATH/Filters/CheckRole.php(36): view('Home')
+ 7 SYSTEMPATH/Filters/Filters.php(203): App\Filters\CheckRole->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 8 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 9 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('quanly', 'before')
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:39:53 --> ErrorException: Undefined property: App\Filters\CheckRole::$user
+[Method: GET, Route: quanly]
+in APPPATH/Filters/CheckRole.php on line 36.
+ 1 APPPATH/Filters/CheckRole.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Filters\\CheckRole::$user', '/Users/chungnguyen/Documents/project/mini-project-1/app/Filters/CheckRole.php', 36)
+ 2 SYSTEMPATH/Filters/Filters.php(203): App\Filters\CheckRole->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('quanly', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:40:43 --> ErrorException: Undefined variable $user
+[Method: GET, Route: quanly]
+in APPPATH/Views/inc/sidebar.php on line 60.
+ 1 APPPATH/Views/inc/sidebar.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', '/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php', 60)
+ 2 APPPATH/Views/Home.php(2): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/inc/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/Users/chungnguyen/Documents/project/mini-project-1/app/Views/Home.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Home', [], true)
+ 6 APPPATH/Filters/CheckRole.php(36): view('Home')
+ 7 SYSTEMPATH/Filters/Filters.php(203): App\Filters\CheckRole->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 8 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 9 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('quanly', 'before')
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:42:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:47:02 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:48:29 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:48:31 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:52:34 --> RuntimeException: Access denied
+[Method: GET, Route: quanly]
+in APPPATH/Filters/CheckRole.php on line 36.
+ 1 SYSTEMPATH/Filters/Filters.php(203): App\Filters\CheckRole->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('quanly', 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:54:12 --> RuntimeException: Access denied
+[Method: GET, Route: quanly]
+in APPPATH/Filters/CheckRole.php on line 36.
+ 1 SYSTEMPATH/Filters/Filters.php(203): App\Filters\CheckRole->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('quanly', 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 04:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 04:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 04:58:34 --> ErrorException: Undefined property: App\Filters\CheckRole::$delegate
+[Method: GET, Route: quanly]
+in APPPATH/Filters/CheckRole.php on line 41.
+ 1 APPPATH/Filters/CheckRole.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Filters\\CheckRole::$delegate', '/Users/chungnguyen/Documents/project/mini-project-1/app/Filters/CheckRole.php', 41)
+ 2 SYSTEMPATH/Filters/Filters.php(203): App\Filters\CheckRole->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('quanly', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:08:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:12:58 --> ErrorException: Undefined property: App\Filters\CheckRole::$delegate
+[Method: GET, Route: quanly]
+in APPPATH/Filters/CheckRole.php on line 40.
+ 1 APPPATH/Filters/CheckRole.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Filters\\CheckRole::$delegate', '/Users/chungnguyen/Documents/project/mini-project-1/app/Filters/CheckRole.php', 40)
+ 2 SYSTEMPATH/Filters/Filters.php(203): App\Filters\CheckRole->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('quanly', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:23:38 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:28:36 --> Error: Call to undefined function App\Filters\get()
+[Method: GET, Route: quanly]
+in APPPATH/Filters/CheckRole.php on line 30.
+ 1 SYSTEMPATH/Filters/Filters.php(203): App\Filters\CheckRole->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('quanly', 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:30:53 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:31:40 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:34:13 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:34:14 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:34:15 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:34:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:36:22 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:38:51 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:40:41 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-26 08:43:03 --> Error: Call to undefined method CodeIgniter\Router\RouteCollection::where()
+[Method: GET, Route: quanly]
+in APPPATH/Config/Routes.php on line 18.
+ 1 SYSTEMPATH/Router/RouteCollection.php(340): require()
+ 2 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-26 08:43:20 --> Error: Call to undefined method CodeIgniter\Router\RouteCollection::where()
+[Method: GET, Route: quanly]
+in APPPATH/Config/Routes.php on line 18.
+ 1 SYSTEMPATH/Router/RouteCollection.php(340): require()
+ 2 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-26 08:43:21 --> Error: Call to undefined method CodeIgniter\Router\RouteCollection::where()
+[Method: GET, Route: quanly]
+in APPPATH/Config/Routes.php on line 18.
+ 1 SYSTEMPATH/Router/RouteCollection.php(340): require()
+ 2 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-26 08:43:28 --> Error: Call to undefined method CodeIgniter\Router\RouteCollection::where()
+[Method: GET, Route: quanly]
+in APPPATH/Config/Routes.php on line 18.
+ 1 SYSTEMPATH/Router/RouteCollection.php(340): require()
+ 2 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-26 08:43:29 --> Error: Call to undefined method CodeIgniter\Router\RouteCollection::where()
+[Method: GET, Route: quanly]
+in APPPATH/Config/Routes.php on line 18.
+ 1 SYSTEMPATH/Router/RouteCollection.php(340): require()
+ 2 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:43:37 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-26 08:43:50 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::{closure}(), 0 passed in /Users/chungnguyen/Documents/project/mini-project-1/system/CodeIgniter.php on line 877 and exactly 1 expected
+[Method: GET, Route: login]
+in APPPATH/Config/Routes.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 2 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-26 08:44:06 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::{closure}(), 0 passed in /Users/chungnguyen/Documents/project/mini-project-1/system/CodeIgniter.php on line 877 and exactly 1 expected
+[Method: GET, Route: login]
+in APPPATH/Config/Routes.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 2 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-26 08:44:06 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::{closure}(), 0 passed in /Users/chungnguyen/Documents/project/mini-project-1/system/CodeIgniter.php on line 877 and exactly 1 expected
+[Method: GET, Route: login]
+in APPPATH/Config/Routes.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 2 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:44:53 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:44:54 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:45:44 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:45:45 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:45:46 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:45:46 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:45:46 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:45:46 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:45:47 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:45:47 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:45:47 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:45:47 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:45:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:45:48 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:46:59 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:47:00 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:47:00 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:47:00 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:47:01 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:47:01 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:47:02 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:47:02 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:47:09 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:47:09 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:47:09 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:47:10 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:47:10 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:47:10 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:47:11 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:47:11 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:47:11 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:52:21 --> ErrorException: Undefined variable $session
+[Method: GET, Route: quanly]
+in APPPATH/Filters/CheckRole.php on line 29.
+ 1 APPPATH/Filters/CheckRole.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', '/Users/chungnguyen/Documents/project/mini-project-1/app/Filters/CheckRole.php', 29)
+ 2 SYSTEMPATH/Filters/Filters.php(203): App\Filters\CheckRole->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('quanly', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-26 08:52:22 --> ErrorException: Undefined variable $session
+[Method: GET, Route: quanly]
+in APPPATH/Filters/CheckRole.php on line 29.
+ 1 APPPATH/Filters/CheckRole.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', '/Users/chungnguyen/Documents/project/mini-project-1/app/Filters/CheckRole.php', 29)
+ 2 SYSTEMPATH/Filters/Filters.php(203): App\Filters\CheckRole->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('quanly', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+CRITICAL - 2024-04-26 08:52:23 --> ErrorException: Undefined variable $session
+[Method: GET, Route: quanly]
+in APPPATH/Filters/CheckRole.php on line 29.
+ 1 APPPATH/Filters/CheckRole.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', '/Users/chungnguyen/Documents/project/mini-project-1/app/Filters/CheckRole.php', 29)
+ 2 SYSTEMPATH/Filters/Filters.php(203): App\Filters\CheckRole->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('quanly', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:52:42 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:52:43 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:55:12 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 08:55:14 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: quanly]
+in SYSTEMPATH/Debug/Toolbar.php on line 436.
+ 1 SYSTEMPATH/Debug/Toolbar.php(436): str_contains(null, '<head>')
+ 2 SYSTEMPATH/Filters/DebugToolbar.php(43): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH/Filters/Filters.php(291): CodeIgniter\Filters\Filters->runAfter([...])
+ 5 SYSTEMPATH/CodeIgniter.php(409): CodeIgniter\Filters\Filters->runRequired('after')
+ 6 SYSTEMPATH/CodeIgniter.php(372): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/chungnguyen/Documents/project/mini-project-1/public/index.php')
+INFO - 2024-04-26 08:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 08:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

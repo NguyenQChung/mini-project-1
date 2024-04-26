@@ -57,12 +57,14 @@
                         <p>Tickets</p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="quanly" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Quản Lý</p>
-                    </a>
-                </li>
+                <?php if (isset($user['role']) && $user['role'] === 'manager') { ?>
+                    <li class="nav-item">
+                        <a href="quanly" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Quản Lý</p>
+                        </a>
+                    </li>
+                <?php } ?>
                 <li class="">
                     <a href="<?= base_url('login') ?>" class="nav-link d-flex justify-content-center">
                         <button class="btn btn-primary btn-block">

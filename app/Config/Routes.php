@@ -6,6 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/Home', 'Home::index');
+$routes->get('/Error','Error::index');
 
 //Routes of Login
 $routes->get('/login', 'Login::index');
@@ -19,8 +20,8 @@ $routes->get('/logout', 'Login::logout');
 
 $routes->get('test', 'test::index');
 
-$routes->get('/quanly', 'Quan_ly::index');
-$routes->post('/quanly', 'Quan_ly::index');
+$routes->get('/quanly', 'Quan_ly::index', );
+$routes->post('/quanly', 'Quan_ly::index', );
 
 $routes->post('/saveUser', 'Quan_Ly::saveUser');
 $routes->post('/quanly/ajaxPagination', 'Quan_ly::ajaxPagination');
