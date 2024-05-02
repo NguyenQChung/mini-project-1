@@ -17,7 +17,13 @@ class List_Ticket extends BaseController
         $dataUsers = new UsersModel();
         // Sử dụng model Ticket thay vì model Users
         $ticketModel = new TicketsModel();
-        $data['tickets'] = $ticketModel->orderBy('id', 'DESC')->paginate(10, 'group1');
+        if ($this->user['role'] === 'manager') {
+            // Nếu là manager, lấy tất cả ticket
+            $data['tickets'] = $ticketModel->orderBy('id', 'DESC')->paginate(10, 'group1');
+        } else {
+            // Nếu là employee, chỉ lấy ticket của họ
+            $data['tickets'] = $ticketModel->where('user_id', $this->user['id'])->orderBy('id', 'DESC')->paginate(10, 'group1');
+        }
         // dd($data['tickets']);
         $data['pager'] = $ticketModel->pager;
         $data['user'] = $this->user;
