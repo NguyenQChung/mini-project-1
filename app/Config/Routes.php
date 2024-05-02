@@ -28,8 +28,10 @@ $routes->post('/saveUser', 'Quan_Ly::saveUser');
 $routes->post('/quanly/ajaxPagination', 'Quan_ly::ajaxPagination');
 
 $routes->get('/getSingleUser/(:num)', 'Quan_ly::getSingleUser/$1');
+$routes->get('/getSingleTicket/(:num)', 'List_Ticket::getSingleTicket/$1');
 
 $routes->post('/updateUser', 'Quan_ly::updateUser');
+$routes->post('/updateTicket', 'List_Ticket::updateTicket');
 
 // $routes->post('/deleteUser/(:num)', 'Quan_ly::deleteUser/$1');
 $routes->post('/deleteUser', 'Quan_ly::deleteUser');
@@ -37,3 +39,4 @@ $routes->post('/deleteUser', 'Quan_ly::deleteUser');
 $routes->post('/resetPassword', 'Quan_ly::resetPassword');
 
 $routes->get('/ListTicket', 'List_Ticket::index');
+$routes->post('/ListTicket', 'List_Ticket::index');

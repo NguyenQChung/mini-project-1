@@ -82,8 +82,9 @@
                                     <td><?= $ticket['body'] ?></td>
                                     <td><?= $ticket['status'] ?></td>
                                     <td class="project-actions text-right">
-                                        <a href="#editEmployeeModal" class="btn btn-info btn-sm edit" data-toggle="modal">
-                                            <i data-toggle="tooltip" class="fas fa-pencil-alt" title="Edit">
+                                        <a href="#editTicket" class="btn btn-info btn-sm editTicket" data-toggle="modal">
+                                            <i data-toggle="tooltip" class="fas fa-pencil-alt editTicket"
+                                                title="EditTicket">
                                             </i>
                                             Edit
                                         </a>
@@ -113,55 +114,12 @@
     </section>
     <!-- /.content -->
 </div>
-<!-- Form Add User -->
-<div id="addEmployeeModal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form action="<?php echo base_url() . 'saveUser'; ?>" method="POST" enctype="multipart/form-data">
-                <div class="modal-header">
-                    <h4 class="modal-title">Add Employee</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label>Name</label>
-                        <input type="text" class="form-control" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" class="form-control" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="avatar" class="form-label">Ảnh đại diện:</label>
-                        <div class="input-group">
-                            <div class="custom-file">
-                                <input type="file" name="avatar" id="avatar" class="custom-file-input"
-                                    onchange="updateFileName(this)">
-                                <label class="custom-file-label" for="avatar" id="avatar-label">Chọn tệp</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="role">Role:</label>
-                        <select class="form-control" id="role" name="role">
-                            <option value="employee">Employee</option>
-                            <option value="manager">Manager</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <input type="button" class="btn btn-default" name="submit" data-dismiss="modal" value="Cancel">
-                    <input type="submit" class="btn btn-success" value="Add">
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
+
 <!-- Form Edit User -->
-<div id="editEmployeeModal" class="modal fade">
+<div id="editTicket" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form action="<?php echo base_url() . "updateUser" ?>" method="POST" enctype="multipart/form-data">
+            <form action="<?php echo base_url() . "updateTicket" ?>" method="POST" enctype="multipart/form-data">
                 <div class="modal-header">
                     <h4 class="modal-title">Edit Employee</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -169,33 +127,17 @@
                 <div class="modal-body">
                     <input type="hidden" name="updateId" class="updateId">
                     <div class="form-group">
-                        <label>Name</label>
-                        <input type="text" class="form-control updateUsername" name="name" required>
+                        <label>Title</label>
+                        <input type="text" class="form-control updateTitle" name="title" required>
                     </div>
                     <div class="form-group">
-                        <label>Email</label>
-                        <input type="text" class="form-control updateEmail" name="email" required>
+                        <label>Email Manager</label>
+                        <input type="text" class="form-control updateEmailManager" name="email_manager" required>
                     </div>
                     <div class="form-group">
-                        <label for="avatar" class="form-label">Ảnh đại diện:</label>
-                        <div class="input-group">
-                            <div class="custom-file">
-                                <input type="file" name="avatar" id="avatar" class="custom-file-input"
-                                    onchange="updateFileName(this)">
-                                <label class="custom-file-label" for="avatar" id="avatar-label">Chọn tệp</label>
-                            </div>
-                        </div>
-
-                        <img src="" alt="User Image" class="img-thumbnail updateAvatar" style="width: 200px;">
+                        <label>Message</label>
+                        <input type="text" class="form-control updateMessage" name="body" required>
                     </div>
-                    <div class="form-group">
-                        <label for="role">Role:</label>
-                        <select class="form-control updateRole" id="role" name="role">
-                            <option value="employee">Employee</option>
-                            <option value="manager">Manager</option>
-                        </select>
-                    </div>
-
                 </div>
                 <div class="modal-footer">
                     <input type="button" name="submit" class="btn btn-default" data-dismiss="modal" value="Cancel">

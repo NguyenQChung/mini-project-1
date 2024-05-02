@@ -152,8 +152,8 @@ $(document).ready(function () {
                 $(".updateRole").val(res.role);
             }
         })
-
     });
+
     $(document).on('click', '.reset', function (e) {
         e.preventDefault();
         var id = $(this).closest('tr').find('td:eq(0)').text();

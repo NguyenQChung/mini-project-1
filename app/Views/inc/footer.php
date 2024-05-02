@@ -49,6 +49,7 @@
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="<?= base_url('dist/js/pages/dashboard.js') ?>"></script>
 <script src="<?= base_url('dist/js/custom.js') ?>"></script>
+<script src="<?= base_url('dist/js/custom1.js') ?>"></script>
 </body>
 
 </html>
