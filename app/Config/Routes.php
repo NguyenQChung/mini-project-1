@@ -15,6 +15,7 @@ $routes->post('/login', 'Login::do_Login');
 $routes->get('/register', 'Register::index');
 
 $routes->get('/tickets', 'Tickets::index');
+$routes->post('/tickets', 'Tickets::do_create');
 
 $routes->get('/logout', 'Login::logout');
 

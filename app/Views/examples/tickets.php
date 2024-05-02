@@ -1,6 +1,8 @@
 <?php include (APPPATH . 'Views/inc/header.php'); ?>
 <?php include (APPPATH . 'Views/inc/sidebar.php'); ?>
-
+<script>
+    var baseUrl = "<?php echo base_url(); ?>";
+</script>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -35,17 +37,33 @@
                     </div>
                 </div>
                 <div class="col-7">
-                    <div class="form-group">
-                        <label for="inputName">Title</label>
-                        <input type="text" id="inputName" class="form-control" />
-                    </div>
-                    <div class="form-group">
-                        <label for="inputMessage">Message</label>
-                        <textarea id="inputMessage" class="form-control" rows="4"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" class="btn btn-primary" value="Create Ticket">
-                    </div>
+                    <form action="<?= base_url('tickets/create') ?>" method="post" id="tickets">
+                        <div class="form-group">
+                            <label for="inputTitle">Title</label>
+                            <input required type="text" id="inputTitle" name="inputTitle" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="inputMessage">Message</label>
+                            <textarea required id="inputMessage" name="inputMessage" class="form-control"
+                                rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmailManager">Email Manager</label>
+                            <input required type="text" id="inputEmailManager" name="inputEmailManager"
+                                class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="status">Status:</label>
+                            <select class="form-control" id="status" name="status">
+                                <option value="new">New</option>
+                                <option value="approved">Approved</option>
+                                <option value="reject">Reject</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary" value="Create Ticket">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -54,21 +72,5 @@
     <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
-
-<footer class="main-footer">
-    <div class="float-right d-none d-sm-block">
-        <b>Version</b> 3.2.0
-    </div>
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights
-    reserved.
-</footer>
-
-<!-- Control Sidebar -->
-<aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-</aside>
-<!-- /.control-sidebar -->
-</div>
-<!-- ./wrapper -->
 
 <?php include (APPPATH . 'Views/inc/footer.php'); ?>

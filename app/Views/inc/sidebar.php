@@ -65,19 +65,23 @@
                         </a>
                     </li>
                 <?php } ?>
-                <li class="">
-                    <a href="<?= base_url('login') ?>" class="nav-link d-flex justify-content-center">
-                        <button class="btn btn-primary btn-block">
-                            Login
-                        </button>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="<?= base_url('logout') ?>" class="nav-link d-flex justify-content-center">
-                        <button class="btn btn-primary btn-block">
-                            Logout
-                        </button>
-                    </a>
+                <?php if (!session()->get('logged_in')): ?>
+                    <li class="">
+                        <a href="<?= base_url('login') ?>" class="nav-link d-flex justify-content-center">
+                            <button class="btn btn-primary btn-block">
+                                Login
+                            </button>
+                        </a>
+                    </li>
+                <?php else: ?>
+                    <li class="">
+                        <a href="<?= base_url('logout') ?>" class="nav-link d-flex justify-content-center">
+                            <button class="btn btn-primary btn-block">
+                                Logout
+                            </button>
+                        </a>
+                    </li>
+                <?php endif; ?>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

@@ -183,5 +183,34 @@ $(document).ready(function () {
                 }
             }
         });
+    });
+
+
+
+    $("#tickets").on('submit', function (e) {
+        e.preventDefault();
+
+        $.ajax({
+            url: baseUrl + "tickets",
+            type: "POST",
+            data: $(this).serialize(),
+            success: function (response) {
+                if (response.status === 'success') {
+                    Swal.fire({
+                        title: "Đã Tạo Ticket",
+                        text: "Thành Công",
+                        icon: "success"
+                    })
+                } else {
+                    Swal.fire({
+                        title: "Tạo Ticket Thất Bại",
+                        text: "Thất Bại",
+                        icon: "error"
+                    })
+                }
+            },
+        })
     })
+
+
 })
