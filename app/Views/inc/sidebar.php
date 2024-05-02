@@ -57,6 +57,12 @@
                         <p>Tickets</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="ListTicket" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>List Tickets</p>
+                    </a>
+                </li>
                 <?php if (isset($user['role']) && $user['role'] === 'manager') { ?>
                     <li class="nav-item">
                         <a href="quanly" class="nav-link">
@@ -65,6 +71,7 @@
                         </a>
                     </li>
                 <?php } ?>
+
                 <?php if (!session()->get('logged_in')): ?>
                     <li class="">
                         <a href="<?= base_url('login') ?>" class="nav-link d-flex justify-content-center">

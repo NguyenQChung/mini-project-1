@@ -35,3 +35,5 @@ $routes->post('/updateUser', 'Quan_ly::updateUser');
 $routes->post('/deleteUser', 'Quan_ly::deleteUser');
 
 $routes->post('/resetPassword', 'Quan_ly::resetPassword');
+
+$routes->get('/ListTicket', 'List_Ticket::index');
