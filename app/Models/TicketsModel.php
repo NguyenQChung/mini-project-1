@@ -6,6 +6,11 @@ use CodeIgniter\Model;
 
 class TicketsModel extends Model
 {
+    public function findByUserId($user_id)
+    {
+        // Thực hiện truy vấn để tìm người dùng theo email
+        return $this->where('user_id', $user_id)->first();
+    }
     protected $table = 'tickets';
     protected $primaryKey = 'id';
     protected $useAutoIncrement = true;

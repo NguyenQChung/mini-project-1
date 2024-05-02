@@ -19,20 +19,11 @@ class Quan_ly extends BaseController
             return view('Home', ['user' => $this->user]);
         }
         $dataUsers = new UsersModel();
-        $data['users'] = $dataUsers->orderBy('id', 'DESC')->paginate(10, 'gruop1');
+        $data['users'] = $dataUsers->orderBy('id', 'DESC')->paginate(10, 'group1');
         $data['pager'] = $dataUsers->pager;
         $data['user'] = $this->user;
 
         return view('examples/Quan_Ly', $data);
-    }
-    public function dataUserTable()
-    {
-        $dataUsers = new UsersModel();
-        $data['users'] = $dataUsers->orderBy('id', 'DESC')->paginate(5, 'gruop1');
-        $data['pager'] = $dataUsers->pager;
-        $data['user'] = $this->user;
-
-        return view('examples/tables/user', $data);
     }
     public function saveUser()
     {

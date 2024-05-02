@@ -53,16 +53,16 @@
                                 <th style="width: 1%">
                                     ID
                                 </th>
-                                <th style="width: 1%">
+                                <th style="width: 2%">
                                     User_ID
                                 </th>
-                                <th style="width: 20%">
+                                <th style="width: 10%">
                                     Title
                                 </th>
-                                <th style="width: 30%">
+                                <th style="width: 10%">
                                     Email Manager
                                 </th>
-                                <th>
+                                <th style="width: 30%">
                                     Message
                                 </th>
                                 <th style="width: 8%" class="text-center">
@@ -73,37 +73,37 @@
                             </tr>
                         </thead>
                         <tbody>
-
-                            <tr>
-                                <td>id</td>
-                                <td>user id </td>
-                                <td> email </td>
-                                <td> body</td>
-                                <td> status</td>
-                                <td>1 </td>
-                                <td class="project-actions text-right">
-                                    <a href="#editEmployeeModal" class="btn btn-info btn-sm edit" data-toggle="modal">
-                                        <i data-toggle="tooltip" class="fas fa-pencil-alt" title="Edit">
-                                        </i>
-                                        Edit
-                                    </a>
-                                    <a class="btn btn-danger btn-sm delete" data-toggle="modal" href="#">
-                                        <i class="fas fa-trash">
-                                        </i>
-                                        Delete
-                                    </a>
-                                    <a class="btn btn-success btn-sm reset" data-toggle="modal" href="#">
-                                        Reset
-                                    </a>
-                                </td>
-                            </tr>
-
+                            <?php foreach ($tickets as $ticket): ?>
+                                <tr>
+                                    <td><?= $ticket['id'] ?></td>
+                                    <td><?= $ticket['user_id'] ?></td>
+                                    <td> <?= $ticket['title'] ?> </td>
+                                    <td><?= $ticket['email_manager'] ?></td>
+                                    <td><?= $ticket['body'] ?></td>
+                                    <td><?= $ticket['status'] ?></td>
+                                    <td class="project-actions text-right">
+                                        <a href="#editEmployeeModal" class="btn btn-info btn-sm edit" data-toggle="modal">
+                                            <i data-toggle="tooltip" class="fas fa-pencil-alt" title="Edit">
+                                            </i>
+                                            Edit
+                                        </a>
+                                        <a class="btn btn-danger btn-sm delete" data-toggle="modal" href="#">
+                                            <i class="fas fa-trash">
+                                            </i>
+                                            Delete
+                                        </a>
+                                        <a class="btn btn-success btn-sm reset" data-toggle="modal" href="#">
+                                            Reset
+                                        </a>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>
                 <div class="d-flex justify-content-center align-items-center">
                     <ul class="pagination">
-
+                        <?= $pager->links('group1', 'bs_pagination'); ?>
                     </ul>
                 </div>
             </div>

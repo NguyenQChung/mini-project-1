@@ -107,7 +107,7 @@
                 </div>
                 <div class="d-flex justify-content-center align-items-center">
                     <ul class="pagination">
-                        <?= $pager->links('gruop1', 'bs_pagination'); ?>
+                        <?= $pager->links('group1', 'bs_pagination'); ?>
                     </ul>
                 </div>
             </div>

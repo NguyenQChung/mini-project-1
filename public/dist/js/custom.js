@@ -200,6 +200,18 @@ $(document).ready(function () {
                         title: "Đã Tạo Ticket",
                         text: "Thành Công",
                         icon: "success"
+                    }).then(() => {
+                        $.ajax({
+                            url: baseUrl + 'tickets',
+                            type: 'GET',
+                            success: function (data) {
+                                // Cập nhật nội dung của trang với dữ liệu mới
+                                $('.content-wrapper').html($(data).find('.content-wrapper').html());
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.log(textStatus, errorThrown);
+                            }
+                        });
                     })
                 } else {
                     Swal.fire({

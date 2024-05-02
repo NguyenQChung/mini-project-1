@@ -9,6 +9,7 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 use App\Models\UsersModel;
+use App\Models\TicketsModel;
 
 /**
  * Class BaseController
@@ -28,6 +29,7 @@ abstract class BaseController extends Controller
     {
         // Lấy thông tin người dùng từ session
         $this->getUserInfo();
+
         helper(['url']);
     }
 
@@ -37,6 +39,7 @@ abstract class BaseController extends Controller
         $userModel = new UsersModel();
         $this->user = $userModel->find($userId);
     }
+
     /**
      * Instance of the main Request object.
      *
