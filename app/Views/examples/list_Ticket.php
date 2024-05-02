@@ -88,7 +88,7 @@
                                             </i>
                                             Edit
                                         </a>
-                                        <a class="btn btn-danger btn-sm delete" data-toggle="modal" href="#">
+                                        <a class="btn btn-danger btn-sm deleteTicket" data-toggle="modal" href="#">
                                             <i class="fas fa-trash">
                                             </i>
                                             Delete

@@ -50,4 +50,11 @@ class List_Ticket extends BaseController
         echo '1';
     }
 
+    public function deleteTicket()
+    {
+        $this->ticket = new TicketsModel();
+        $id = $this->request->getVar('id');
+        $this->ticket->delete($id);
+        echo 1;
+    }
 }
