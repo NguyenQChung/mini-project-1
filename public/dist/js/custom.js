@@ -139,7 +139,6 @@ $(document).ready(function () {
     $(document).on('click', '.edit', function (e) {
         e.preventDefault();
         var id = $(this).closest('tr').find('td:eq(0)').text();
-        console.log(id);
         $.ajax({
             url: "getSingleUser/" + id,
             method: "GET",
@@ -155,5 +154,34 @@ $(document).ready(function () {
         })
 
     });
-
+    $(document).on('click', '.reset', function (e) {
+        e.preventDefault();
+        var id = $(this).closest('tr').find('td:eq(0)').text();
+        $.ajax({
+            url: baseUrl + "resetPassword",
+            method: "POST",
+            data: { id: id },
+            success: function (res) {
+                if (res.includes("1")) {
+                    Swal.fire({
+                        title: "Đã Reset Password",
+                        text: "Thành Công",
+                        icon: "success"
+                    }).then(() => {
+                        $.ajax({
+                            url: baseUrl + 'quanly',
+                            type: 'GET',
+                            success: function (data) {
+                                // Cập nhật nội dung của trang với dữ liệu mới
+                                $('.content-wrapper').html($(data).find('.content-wrapper').html());
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.log(textStatus, errorThrown);
+                            }
+                        });
+                    });
+                }
+            }
+        });
+    })
 })

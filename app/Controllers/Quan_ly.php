@@ -9,7 +9,12 @@ class Quan_ly extends BaseController
 
     public function index()
     {
-
+        // dd($this->user);
+        $session = session('user');
+        // Kiểm tra xem người dùng đã đăng nhập chưa
+        if (!$session) {
+            return redirect()->to('login');
+        }
         if ($this->user['role'] !== 'manager') {
             return view('Home', ['user' => $this->user]);
         }
@@ -120,6 +125,16 @@ class Quan_ly extends BaseController
         $this->user = new UsersModel();
         $id = $this->request->getVar('id');
         $this->user->delete($id);
+        echo 1;
+    }
+    public function resetPassword()
+    {
+        $this->user = new UsersModel();
+        $id = $this->request->getVar('id');
+        $password = 'Nhanvien123';
+        $password = password_hash($password, PASSWORD_BCRYPT);
+        $userModel = new UsersModel();
+        $userModel->update($id, ['password' => $password]);
         echo 1;
     }
 }

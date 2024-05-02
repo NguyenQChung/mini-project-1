@@ -96,6 +96,9 @@
                                             </i>
                                             Delete
                                         </a>
+                                        <a class="btn btn-success btn-sm reset" data-toggle="modal" href="#">
+                                            Reset
+                                        </a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>

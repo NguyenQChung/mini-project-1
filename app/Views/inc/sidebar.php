@@ -1,7 +1,7 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="<?= base_url('Home') ?>" class="brand-link">
         <img src="<?= base_url('dist/img/AdminLTELogo.png') ?>" alt="AdminLTE Logo"
             class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">Quản Lý Nhân Sự
@@ -69,13 +69,6 @@
                     <a href="<?= base_url('login') ?>" class="nav-link d-flex justify-content-center">
                         <button class="btn btn-primary btn-block">
                             Login
-                        </button>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="<?= base_url('register') ?>" class="nav-link d-flex justify-content-center">
-                        <button class="btn btn-primary btn-block">
-                            Register
                         </button>
                     </a>
                 </li>

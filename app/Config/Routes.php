@@ -6,7 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/Home', 'Home::index');
-$routes->get('/Error','Error::index');
+$routes->get('/Error', 'Error::index');
 
 //Routes of Login
 $routes->get('/login', 'Login::index');
@@ -32,3 +32,5 @@ $routes->post('/updateUser', 'Quan_ly::updateUser');
 
 // $routes->post('/deleteUser/(:num)', 'Quan_ly::deleteUser/$1');
 $routes->post('/deleteUser', 'Quan_ly::deleteUser');
+
+$routes->post('/resetPassword', 'Quan_ly::resetPassword');
