@@ -68,7 +68,7 @@
                                 <th style="width: 8%" class="text-center">
                                     Status
                                 </th>
-                                <th style="width: 20%">
+                                <th style="width: 10%">
                                 </th>
                             </tr>
                         </thead>
@@ -76,27 +76,27 @@
                             <?php foreach ($tickets as $ticket): ?>
                                 <tr>
                                     <td><?= $ticket['id'] ?></td>
-                                    <td><?= $ticket['user_id'] ?></td>
-                                    <td> <?= $ticket['title'] ?> </td>
+                                    <td>
+                                        <?= $ticket['user_id'] ?>
+                                    </td>
+                                    <td>
+                                        <a href="#editTicket" class="editTicket" data-toggle="modal">
+                                            <?= $ticket['title'] ?>
+                                        </a>
+                                    </td>
                                     <td><?= $ticket['email_manager'] ?></td>
                                     <td><?= $ticket['body'] ?></td>
                                     <td><?= $ticket['status'] ?></td>
                                     <td class="project-actions text-right">
-                                        <a href="#editTicket" class="btn btn-info btn-sm editTicket" data-toggle="modal">
-                                            <i data-toggle="tooltip" class="fas fa-pencil-alt editTicket"
-                                                title="EditTicket">
-                                            </i>
-                                            Edit
-                                        </a>
-                                        <a class="btn btn-danger btn-sm deleteTicket" data-toggle="modal" href="#">
-                                            <i class="fas fa-trash">
-                                            </i>
-                                            Delete
-                                        </a>
-                                        <a class="btn btn-success btn-sm reset" data-toggle="modal" href="#">
-                                            Reset
-                                        </a>
+                                        <?php if ($user['role'] === 'manager'): ?>
+                                            <a class="btn btn-danger btn-sm deleteTicket" data-toggle="modal" href="#">
+                                                <i class="fas fa-trash">
+                                                </i>
+                                                Delete
+                                            </a>
+                                        <?php endif; ?>
                                     </td>
+
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
@@ -128,25 +128,33 @@
                     <input type="hidden" name="updateId" class="updateId">
                     <div class="form-group">
                         <label>Title</label>
-                        <input type="text" class="form-control updateTitle" name="title" required>
+                        <input type="text" class="form-control updateTitle" name="title" <?php echo $readOnly; ?>>
                     </div>
                     <div class="form-group">
                         <label>Email Manager</label>
-                        <input type="text" class="form-control updateEmailManager" name="email_manager" required>
+                        <input type="text" class="form-control updateEmailManager" name="email_manager" <?php echo $readOnly; ?>>
                     </div>
                     <div class="form-group">
-                        <label>Message</label>
-                        <input type="text" class="form-control updateMessage" name="body" required>
+                        <label>Noi Dung</label>
+                        <textarea type="text" class="form-control updateMessage" name="body" <?php echo $readOnly; ?>></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="status">Status:</label>
+                        <select class="form-control updateStatus" id="status" name="status">
+                            <option value="new">New</option>
+                            <option value="approved">Approved</option>
+                            <option value="reject">reject</option>
+                        </select>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <input type="button" name="submit" class="btn btn-default" data-dismiss="modal" value="Cancel">
                     <input type="submit" class="btn btn-info" value="Save">
                 </div>
-
             </form>
         </div>
     </div>
 </div>
+
 <!-- /.content-wrapper -->
 <?php include (APPPATH . 'Views/inc/footer.php'); ?>

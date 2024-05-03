@@ -20,6 +20,7 @@ class Tickets extends BaseController
     public function do_create()
     {
         $session = session('user');
+
         $ticketModel = new TicketsModel();
         $title = $this->request->getPost('inputTitle');
         $message = $this->request->getPost('inputMessage');
@@ -33,6 +34,17 @@ class Tickets extends BaseController
             $result = $ticketModel->insert($data);
 
             if ($result) {
+                $newTicket = $ticketModel->where('id', $result)->first();
+                $createdAt = $newTicket['created_at'];
+                $createdAtFormatted = date('d/m/Y', strtotime($createdAt));
+                $userName = $session['name'];
+                $email = \Config\Services::email();
+                $email->setTo($emailManager);
+                $email->setFrom('ST@gmail.com', 'Quang Chung');
+                $email->setSubject('Xử lý phiếu yêu cầu');
+                $email->setMessage($userName . ' đã tạo phiếu yêu cầu vào ngày ' . $createdAtFormatted . '.');
+
+                $email->send();
                 // Phản hồi thành công
                 return $this->response->setJSON([
                     'status' => 'success',

@@ -14,7 +14,6 @@ class List_Ticket extends BaseController
         if (!$session) {
             return redirect()->to('login');
         }
-        $dataUsers = new UsersModel();
         // Sử dụng model Ticket thay vì model Users
         $ticketModel = new TicketsModel();
         if ($this->user['role'] === 'manager') {
@@ -27,6 +26,7 @@ class List_Ticket extends BaseController
         // dd($data['tickets']);
         $data['pager'] = $ticketModel->pager;
         $data['user'] = $this->user;
+        $data['readOnly'] = ($this->user['role'] === 'manager') ? 'readonly' : ''; // Xác định trường hợp chỉ đọc
 
         return view('examples/list_Ticket', $data);
     }
@@ -45,11 +45,39 @@ class List_Ticket extends BaseController
         $title = $this->request->getPost('title');
         $email_manager = $this->request->getPost('email_manager');
         $body = $this->request->getPost('body');
+        $status = $this->request->getPost('status');
+        // Cập nhật thông tin người dùng trong cơ sở dữ liệu
+        if ($this->user['role'] === 'manager') {
+            // Nếu là manager, chỉ cập nhật trạng thái của ticket
+            $this->ticketModel->update($ticketId, [
+                'status' => $status,
+            ]);
+
+        } else {
+            // Nếu không phải manager, cập nhật tất cả các trường
+            $title = $this->request->getPost('title');
+            $email_manager = $this->request->getPost('email_manager');
+            $body = $this->request->getPost('body');
+            // Cập nhật thông tin của ticket
+            $this->ticketModel->update($ticketId, [
+                'title' => $title,
+                'email_manager' => $email_manager,
+                'body' => $body,
+            ]);
+
+        }
+        echo '1';
+    }
+
+    public function updateStatus()
+    {
+        $this->ticketModel = new TicketsModel();
+        // Nhận dữ liệu từ biểu mẫu gửi đi
+        $ticketId = $this->request->getPost('updateId');
+        $status = $this->request->getPost('status');
         // Cập nhật thông tin người dùng trong cơ sở dữ liệu
         $this->ticketModel->update($ticketId, [
-            'title' => $title,
-            'email_manager' => $email_manager,
-            'body' => $body,
+            'status' => $status,
         ]);
 
         // Chuyển hướng người dùng về trang danh sách người dùng hoặc trang khác

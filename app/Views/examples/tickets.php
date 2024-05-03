@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="col-7">
-                    <form action="<?= base_url('tickets/create') ?>" method="post" id="tickets">
+                    <form action="<?= base_url('tickets') ?>" method="post" id="tickets">
                         <div class="form-group">
                             <label for="inputTitle">Title</label>
                             <input required type="text" id="inputTitle" name="inputTitle" class="form-control" />
@@ -49,8 +49,11 @@
                         </div>
                         <div class="form-group">
                             <label for="inputEmailManager">Email Manager</label>
-                            <input required type="text" id="inputEmailManager" name="inputEmailManager"
-                                class="form-control" />
+                            <select class="form-control" id="inputEmailManager" name="inputEmailManager">
+                                <option value="admin@gmail.com">Quản lý 1 </option>
+                                <option value="admin1@gmail.com">Quản lý 2 </option>
+                                <option value="admin2@gmail.com">Quản lý 3 </option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="status">Status:</label>

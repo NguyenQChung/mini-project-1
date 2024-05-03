@@ -71,6 +71,7 @@ $(document).ready(function () {
             success: function (response) {
                 if (response === '1') {
                     modal.modal('hide');
+
                     // Nếu cập nhật thành công, tải lại dữ liệu người dùng
                     $.ajax({
                         url: baseUrl + 'quanly',
@@ -189,7 +190,15 @@ $(document).ready(function () {
 
     $("#tickets").on('submit', function (e) {
         e.preventDefault();
-
+        Swal.fire({
+            title: 'Đang tạo Ticket...',
+            html: 'Vui lòng đợi...',
+            allowOutsideClick: false,
+            showConfirmButton: false,
+            onBeforeOpen: () => {
+                Swal.showLoading();
+            }
+        });
         $.ajax({
             url: baseUrl + "tickets",
             type: "POST",
