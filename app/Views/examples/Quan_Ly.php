@@ -45,6 +45,7 @@
 
                 </div>
             </div>
+
             <div id="user_table">
                 <div class="card-body p-0">
                     <table class="table table-striped projects">
@@ -66,6 +67,17 @@
                                     Role
                                 </th>
                                 <th style="width: 20%">
+                                    <form id="searchForm" class="form-inline" method="GET">
+                                        <div class="input-group input-group-sm">
+                                            <input id="inputSearch" class="form-control form-control-navbar"
+                                                type="search" placeholder="Search" aria-label="Search" name="h">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-navbar" type="submit">
+                                                    <i class="fas fa-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </th>
                             </tr>
                         </thead>

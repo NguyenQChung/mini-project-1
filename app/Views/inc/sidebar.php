@@ -13,8 +13,13 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="<?= base_url('dist/img/user2-160x160.jpg') ?>" class="img-circle elevation-2"
-                    alt="User Image">
+                <?php if (isset($user) && isset($user['avatar'])): ?>
+                    <img src="<?= base_url('uploads/' . $user['avatar']) ?>" class="img-circle elevation-2"
+                        alt="User Image">
+                <?php else: ?>
+                    <img src="<?= base_url('dist/img/user2-160x160.jpg') ?>" class="img-circle elevation-2"
+                        alt="User Image">
+                <?php endif; ?>
             </div>
             <div class="info">
                 <?php if (isset($user) && isset($user['name'])): ?>

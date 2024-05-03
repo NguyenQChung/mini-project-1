@@ -10,16 +10,53 @@ class Quan_ly extends BaseController
     public function index()
     {
         // dd($this->user);
-        $session = session('user');
-        // Kiểm tra xem người dùng đã đăng nhập chưa
-        if (!$session) {
-            return redirect()->to('login');
-        }
-        if ($this->user['role'] !== 'manager') {
-            return view('Home', ['user' => $this->user]);
-        }
+        // $session = session('user');
+        // // Kiểm tra xem người dùng đã đăng nhập chưa
+        // if (!$session) {
+        //     return redirect()->to('login');
+        // }
+        // if ($this->user['role'] !== 'manager') {
+        //     return view('Home', ['user' => $this->user]);
+        // }
         $dataUsers = new UsersModel();
-        $data['users'] = $dataUsers->orderBy('id', 'DESC')->paginate(10, 'group1');
+
+        $searchTerm = $this->request->getGet('q');
+
+        if (!empty($searchTerm)) {
+            // Thực hiện tìm kiếm với điều kiện tên người dùng chứa từ khóa tìm kiếm
+            $data['users'] = $dataUsers->like('name', $searchTerm)->orderBy('id', 'DESC')->paginate(10, 'group1');
+        } else {
+            // Nếu không có từ khóa tìm kiếm, lấy tất cả người dùng
+            $data['users'] = $dataUsers->orderBy('id', 'DESC')->paginate(10, 'group1');
+        }
+        $data['pager'] = $dataUsers->pager;
+        $data['user'] = $this->user;
+
+        return view('examples/Quan_Ly', $data);
+    }
+
+    public function index1()
+    {
+        // dd($this->user);
+        // $session = session('user');
+        // // Kiểm tra xem người dùng đã đăng nhập chưa
+        // if (!$session) {
+        //     return redirect()->to('login');
+        // }
+        // if ($this->user['role'] !== 'manager') {
+        //     return view('Home', ['user' => $this->user]);
+        // }
+        $dataUsers = new UsersModel();
+
+        $searchTerm = $this->request->getGet('h');
+
+        if (!empty($searchTerm)) {
+            // Thực hiện tìm kiếm với điều kiện tên người dùng chứa từ khóa tìm kiếm
+            $data['users'] = $dataUsers->like('name', $searchTerm)->orderBy('id', 'DESC')->paginate(10, 'group1');
+        } else {
+            // Nếu không có từ khóa tìm kiếm, lấy tất cả người dùng
+            $data['users'] = $dataUsers->orderBy('id', 'DESC')->paginate(10, 'group1');
+        }
         $data['pager'] = $dataUsers->pager;
         $data['user'] = $this->user;
 
@@ -128,5 +165,6 @@ class Quan_ly extends BaseController
         $userModel->update($id, ['password' => $password]);
         echo 1;
     }
+
 }
 

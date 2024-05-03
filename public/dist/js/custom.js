@@ -71,7 +71,7 @@ $(document).ready(function () {
             success: function (response) {
                 if (response === '1') {
                     modal.modal('hide');
-
+                    $('#addEmployeeModal form')[0].reset();
                     // Nếu cập nhật thành công, tải lại dữ liệu người dùng
                     $.ajax({
                         url: baseUrl + 'quanly',
@@ -210,17 +210,7 @@ $(document).ready(function () {
                         text: "Thành Công",
                         icon: "success"
                     }).then(() => {
-                        $.ajax({
-                            url: baseUrl + 'tickets',
-                            type: 'GET',
-                            success: function (data) {
-                                // Cập nhật nội dung của trang với dữ liệu mới
-                                $('.content-wrapper').html($(data).find('.content-wrapper').html());
-                            },
-                            error: function (jqXHR, textStatus, errorThrown) {
-                                console.log(textStatus, errorThrown);
-                            }
-                        });
+                        window.location.href = baseUrl + 'ListTicket';
                     })
                 } else {
                     Swal.fire({
@@ -235,3 +225,25 @@ $(document).ready(function () {
 
 
 })
+
+$(document).on('submit', '#searchForm', function (e) {
+    console.log(1);
+    e.preventDefault();
+
+    var searchTerm = $('#inputSearch').val();
+
+    $.ajax({
+        url: baseUrl + "quanly1",
+        method: 'GET',
+        data: {
+            h: searchTerm
+        },
+        success: function (data) {
+
+            $('.content-wrapper').html($(data).find('.content-wrapper').html());
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(textStatus, errorThrown);
+        }
+    });
+});

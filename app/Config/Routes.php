@@ -21,6 +21,7 @@ $routes->get('/logout', 'Login::logout');
 
 $routes->get('test', 'test::index');
 
+$routes->get('/quanly1', 'Quan_ly::index1', );
 $routes->get('/quanly', 'Quan_ly::index', );
 $routes->post('/quanly', 'Quan_ly::index', );
 
@@ -43,3 +44,5 @@ $routes->get('/ListTicket', 'List_Ticket::index');
 $routes->post('/ListTicket', 'List_Ticket::index');
 
 $routes->post('/updateStatus', 'List_Ticket::updateStatus');
+
+$routes->get('/search', 'Quan_ly::search');
