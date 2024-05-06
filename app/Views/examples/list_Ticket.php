@@ -65,7 +65,18 @@
                                 <th style="width: 8%" class="text-center">
                                     Status
                                 </th>
-                                <th style="width: 10%">
+                                <th style="width: 15%">
+                                    <form id="searchFormTicket" class="form-inline" method="GET">
+                                        <div class="input-group input-group-sm">
+                                            <input id="inputSearchTicket" class="form-control form-control-navbar"
+                                                type="search" placeholder="Search" aria-label="Search" name="q">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-navbar" type="submit">
+                                                    <i class="fas fa-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </th>
                             </tr>
                         </thead>

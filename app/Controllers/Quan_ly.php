@@ -10,17 +10,17 @@ class Quan_ly extends BaseController
     public function index()
     {
         // dd($this->user);
-        // $session = session('user');
-        // // Kiểm tra xem người dùng đã đăng nhập chưa
-        // if (!$session) {
-        //     return redirect()->to('login');
-        // }
-        // if ($this->user['role'] !== 'manager') {
-        //     return view('Home', ['user' => $this->user]);
-        // }
+        $session = session('user');
+        // Kiểm tra xem người dùng đã đăng nhập chưa
+        if (!$session) {
+            return redirect()->to('login');
+        }
+        if ($this->user['role'] !== 'manager') {
+            return view('Home', ['user' => $this->user]);
+        }
         $dataUsers = new UsersModel();
 
-        $searchTerm = $this->request->getGet('q');
+        $searchTerm = $this->request->getGet('h');
 
         if (!empty($searchTerm)) {
             // Thực hiện tìm kiếm với điều kiện tên người dùng chứa từ khóa tìm kiếm

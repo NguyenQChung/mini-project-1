@@ -16,9 +16,17 @@ class List_Ticket extends BaseController
         }
         // Sử dụng model Ticket thay vì model Users
         $ticketModel = new TicketsModel();
+
+        $searchTerm = $this->request->getGet('q');
+
         if ($this->user['role'] === 'manager') {
-            // Nếu là manager, lấy tất cả ticket
-            $data['tickets'] = $ticketModel->orderBy('id', 'DESC')->paginate(10, 'group1');
+            if (!empty($searchTerm)) {
+                // Thực hiện tìm kiếm với điều kiện tên người dùng chứa từ khóa tìm kiếm
+                $data['tickets'] = $ticketModel->like('title', $searchTerm)->orderBy('id', 'DESC')->paginate(10, 'group1');
+            } else {
+                // Nếu không có từ khóa tìm kiếm, lấy tất cả người dùng
+                $data['tickets'] = $ticketModel->orderBy('id', 'DESC')->paginate(10, 'group1');
+            }
         } else {
             // Nếu là employee, chỉ lấy ticket của họ
             $data['tickets'] = $ticketModel->where('user_id', $this->user['id'])->orderBy('id', 'DESC')->paginate(10, 'group1');

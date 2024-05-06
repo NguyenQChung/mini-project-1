@@ -25,7 +25,7 @@ class Tickets extends BaseController
         $title = $this->request->getPost('inputTitle');
         $message = $this->request->getPost('inputMessage');
         $emailManager = $this->request->getPost('inputEmailManager');
-        $status = $this->request->getPost('status');
+        $status = 'new';
 
         $data = ['title' => $title, 'body' => $message, 'user_id' => $session['id'], 'email_manager' => $emailManager, 'status' => $status];
 

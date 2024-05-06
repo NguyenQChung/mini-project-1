@@ -56,14 +56,6 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="status">Status:</label>
-                            <select class="form-control" id="status" name="status">
-                                <option value="new">New</option>
-                                <option value="approved">Approved</option>
-                                <option value="reject">Reject</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
                             <input type="submit" class="btn btn-primary" value="Create Ticket">
                         </div>
                     </form>

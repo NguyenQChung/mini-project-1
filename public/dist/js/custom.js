@@ -227,7 +227,6 @@ $(document).ready(function () {
 })
 
 $(document).on('submit', '#searchForm', function (e) {
-    console.log(1);
     e.preventDefault();
 
     var searchTerm = $('#inputSearch').val();
@@ -237,6 +236,27 @@ $(document).on('submit', '#searchForm', function (e) {
         method: 'GET',
         data: {
             h: searchTerm
+        },
+        success: function (data) {
+
+            $('.content-wrapper').html($(data).find('.content-wrapper').html());
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(textStatus, errorThrown);
+        }
+    });
+});
+
+$(document).on('submit', '#searchFormTicket', function (e) {
+    e.preventDefault();
+    console.log(1);
+    var searchTerm = $('#inputSearchTicket').val();
+
+    $.ajax({
+        url: baseUrl + "ListTicket",
+        method: 'GET',
+        data: {
+            q: searchTerm
         },
         success: function (data) {
 
