@@ -46,3 +46,7 @@ $routes->post('/ListTicket', 'List_Ticket::index');
 $routes->post('/updateStatus', 'List_Ticket::updateStatus');
 
 $routes->get('/search', 'Quan_ly::search');
+
+$routes->get('/profile', 'ProfileController::index');
+
+$routes->post('/changepassword', 'ProfileController::changePassword');

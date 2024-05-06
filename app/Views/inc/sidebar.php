@@ -23,8 +23,8 @@
             </div>
             <div class="info">
                 <?php if (isset($user) && isset($user['name'])): ?>
-                    <div class="info"><a href="#" class="d-block"><?= $user['name'] ?></a></div>
-                    <div class="role" style=" color: #c2c7d0;">Role : <?= $user['role'] ?></div>
+                    <div class="info"><a href="profile" class="d-block"><?= $user['name'] ?></a></div>
+                    <div class="role" style=" color: #c2c7d0;">Chức vụ : <?= $user['role'] ?></div>
                 <?php else: ?>
                     <div class="info"><a href="#" class="d-block">Unknown User</a></div>
                 <?php endif; ?>
@@ -53,19 +53,19 @@
                     <a href="Home" class="nav-link active">
                         <i class="fa fa-home" aria-hidden="true"></i>
                         <p>
-                            HOME
+                            TRANG CHỦ
                         </p>
                     </a>
                 <li class="nav-item">
                     <a href="tickets" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
-                        <p>Tickets</p>
+                        <p>Tạo phiếu yêu cầu </p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="ListTicket" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
-                        <p>List Tickets</p>
+                        <p>Danh sách phiếu yêu cầu </p>
                     </a>
                 </li>
                 <?php if (isset($user['role']) && $user['role'] === 'manager') { ?>
@@ -79,18 +79,17 @@
 
                 <?php if (!session()->get('logged_in')): ?>
                     <li class="">
-                        <a href="<?= base_url('login') ?>" class="nav-link d-flex justify-content-center">
+                        <a href="<?= base_url('login') ?>" class="nav-link ">
                             <button class="btn btn-primary btn-block">
-                                Login
+                                Đăng Nhập
                             </button>
                         </a>
                     </li>
                 <?php else: ?>
-                    <li class="">
-                        <a href="<?= base_url('logout') ?>" class="nav-link d-flex justify-content-center">
-                            <button class="btn btn-primary btn-block">
-                                Logout
-                            </button>
+                    <li class="nav-item menu-open">
+                        <a href="<?= base_url('logout') ?>" class="nav-link active ">
+                            <i class="fas fa-sign-out-alt" aria-hidden=" true"></i>
+                            <p>Đăng Xuất</p>
                         </a>
                     </li>
                 <?php endif; ?>

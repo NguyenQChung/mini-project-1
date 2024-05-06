@@ -92,6 +92,59 @@ $(document).ready(function () {
         });
     });
 
+    $(document).on('show.bs.modal', '#changePass', function (e) {
+        // Ẩn thông báo lỗi khi modal được mở
+        $('#oldPasswordError').hide();
+        $('#rePasswordError').hide();
+    });
+
+    $(document).on('submit', '#changePass form', function (e) {
+        e.preventDefault();
+
+        var formData = new FormData($(this)[0]); // Lấy dữ liệu từ form
+        var url = $(this).attr('action'); // Lấy URL từ action của form
+        var modal = $(this).closest('.modal');
+        $.ajax({
+            url: url,
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                if (response === '1') {
+                    modal.modal('hide');
+                    $('#changePass form')[0].reset();
+                    // Nếu cập nhật thành công, tải lại dữ liệu người dùng
+                    Swal.fire({
+                        title: "Đổi Mật Khẩu Thành Công",
+                        icon: "success"
+                    }).then(() => {
+                        $.ajax({
+                            url: baseUrl + 'profile',
+                            type: 'GET',
+                            success: function (data) {
+                                // Cập nhật nội dung của trang với dữ liệu mới
+                                $('.content-wrapper').html($(data).find('.content-wrapper').html());
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.log(textStatus, errorThrown);
+                            }
+                        });
+                    });
+                } else if (response === '3') {
+                    // Nếu có lỗi, hiển thị thông báo lỗi
+                    $('#oldPasswordError').show(); // Hiển thị thông báo lỗi
+                }
+                else if (response === '2') {
+                    $('#rePasswordError').show();
+                }
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log(textStatus, errorThrown);
+            }
+        });
+    });
+
     $(document).on('click', '.deleteTicket', function (e) {
         e.preventDefault();
         var id = $(this).closest('tr').find('td:eq(0)').text();
