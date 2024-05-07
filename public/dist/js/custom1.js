@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     $(document).on('click', '.editTicket', function (e) {
         e.preventDefault();
-        var id = $(this).closest('tr').find('td:eq(0)').text();
+        var id = $(this).closest('tr').find('td:nth-child(2)').text().trim();
         $.ajax({
             url: "getSingleTicket/" + id,
             method: "GET",
@@ -21,10 +21,11 @@ $(document).ready(function () {
 
 
     $(document).on('submit', '#editTicket form', function (e) {
-        console.log("Form submitted");
+
         e.preventDefault();
 
-        var formData = new FormData($(this)[0]); // Lấy dữ liệu từ form
+        var formData = new FormData($(this)[0]);
+        console.log(formData); // Lấy dữ liệu từ form
         var url = $(this).attr('action'); // Lấy URL từ action của form
         var modal = $(this).closest('.modal');
         $.ajax({
@@ -36,17 +37,23 @@ $(document).ready(function () {
             success: function (response) {
                 if (response === '1') {
                     modal.modal('hide');
-                    // Nếu cập nhật thành công, tải lại dữ liệu người dùng
-                    $.ajax({
-                        url: baseUrl + 'ListTicket',
-                        type: 'GET',
-                        success: function (data) {
-                            // Cập nhật nội dung của trang với dữ liệu mới
-                            $('.content-wrapper').html($(data).find('.content-wrapper').html());
-                        },
-                        error: function (jqXHR, textStatus, errorThrown) {
-                            console.log(textStatus, errorThrown);
-                        }
+                    Swal.fire({
+                        title: "Cập nhật thông tin phiếu thành công!",
+                        text: "",
+                        icon: "success"
+                    }).then(() => {
+                        // Nếu cập nhật thành công, tải lại dữ liệu người dùng
+                        $.ajax({
+                            url: baseUrl + 'ListTicket',
+                            type: 'GET',
+                            success: function (data) {
+                                // Cập nhật nội dung của trang với dữ liệu mới
+                                $('.content-wrapper').html($(data).find('.content-wrapper').html());
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.log(textStatus, errorThrown);
+                            }
+                        })
                     });
                 }
             },
@@ -56,41 +63,6 @@ $(document).ready(function () {
         });
     });
 
-
-    $(document).on('submit', '#editStatus form', function (e) {
-        e.preventDefault();
-
-        var formData = new FormData($(this)[0]); // Lấy dữ liệu từ form
-        var url = $(this).attr('action'); // Lấy URL từ action của form
-        var modal = $(this).closest('.modal');
-        $.ajax({
-            url: url,
-            type: 'POST',
-            data: formData,
-            processData: false,
-            contentType: false,
-            success: function (response) {
-                if (response === '1') {
-                    modal.modal('hide');
-                    // Nếu cập nhật thành công, tải lại dữ liệu người dùng
-                    $.ajax({
-                        url: baseUrl + 'ListTicket',
-                        type: 'GET',
-                        success: function (data) {
-                            // Cập nhật nội dung của trang với dữ liệu mới
-                            $('.content-wrapper').html($(data).find('.content-wrapper').html());
-                        },
-                        error: function (jqXHR, textStatus, errorThrown) {
-                            console.log(textStatus, errorThrown);
-                        }
-                    });
-                }
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.log(textStatus, errorThrown);
-            }
-        });
-    });
 
     $(document).on('show.bs.modal', '#changePass', function (e) {
         // Ẩn thông báo lỗi khi modal được mở
@@ -147,7 +119,7 @@ $(document).ready(function () {
 
     $(document).on('click', '.deleteTicket', function (e) {
         e.preventDefault();
-        var id = $(this).closest('tr').find('td:eq(0)').text();
+        var id = $(this).closest('tr').find('td:nth-child(2)').text().trim();
 
         Swal.fire({
             title: "Bạn có chắc muốn xóa không ?",

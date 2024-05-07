@@ -15,12 +15,14 @@ $(document).ready(function () {
             success: function (data) {
                 // Cập nhật nội dung của trang với dữ liệu mới
                 $('.content-wrapper').html($(data).find('.content-wrapper').html());
+
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.log(textStatus, errorThrown);
             }
         });
     });
+
 
     $(document).on('submit', '#editEmployeeModal form', function (e) {
         e.preventDefault();

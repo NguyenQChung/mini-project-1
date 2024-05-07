@@ -10,12 +10,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Tickets</h1>
+                    <h1>Phiếu Yêu Cầu</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="Home">Home</a></li>
-                        <li class="breadcrumb-item active">Tickets</li>
+                        <li class="breadcrumb-item"><a href="Home">Trang Chủ</a></li>
+                        <li class="breadcrumb-item active">Phiếu Yêu Cầu</li>
                     </ol>
                 </div>
             </div>
@@ -39,16 +39,16 @@
                 <div class="col-7">
                     <form action="<?= base_url('tickets') ?>" method="post" id="tickets">
                         <div class="form-group">
-                            <label for="inputTitle">Title</label>
+                            <label for="inputTitle">Tiêu Đề</label>
                             <input required type="text" id="inputTitle" name="inputTitle" class="form-control" />
                         </div>
                         <div class="form-group">
-                            <label for="inputMessage">Message</label>
+                            <label for="inputMessage">Nội Dung</label>
                             <textarea required id="inputMessage" name="inputMessage" class="form-control"
                                 rows="4"></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="inputEmailManager">Email Manager</label>
+                            <label for="inputEmailManager">Gửi mail đến Quản lý </label>
                             <select class="form-control" id="inputEmailManager" name="inputEmailManager">
                                 <option value="admin@gmail.com">Quản lý 1 </option>
                                 <option value="admin1@gmail.com">Quản lý 2 </option>

@@ -8,17 +8,18 @@ use CodeIgniter\Pager\PagerRenderer;
 $pager->setSurroundCount(2);
 ?>
 
+
 <nav aria-label="<?= lang('Pager.pageNavigation') ?>">
     <ul class="pagination">
         <?php if ($pager->hasPrevious()): ?>
             <li>
-                <a href="<?= $pager->getFirst() ?>" aria-label="<?= lang('Pager.first') ?>">
-                    <span aria-hidden="true"><?= lang('Pager.first') ?></span>
+                <a class="page-link" href=" <?= $pager->getFirst() ?>" aria-label="<?= lang('Pager.first') ?>">
+                    <i class="fas fa-angle-double-left" aria-hidden="true"></i>
                 </a>
             </li>
             <li>
-                <a href="<?= $pager->getPrevious() ?>" aria-label="<?= lang('Pager.previous') ?>">
-                    <span aria-hidden="true"><?= lang('Pager.previous') ?></span>
+                <a class="page-link" href="<?= $pager->getPreviousPage() ?>" aria-label="<?= lang('Pager.previous') ?>">
+                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
                 </a>
             </li>
         <?php endif ?>
@@ -33,15 +34,17 @@ $pager->setSurroundCount(2);
 
         <?php if ($pager->hasNext()): ?>
             <li>
-                <a href="<?= $pager->getNext() ?>" aria-label="<?= lang('Pager.next') ?>">
-                    <span aria-hidden="true"><?= lang('Pager.next') ?></span>
+                <a class="page-link" href="<?= $pager->getNextPage() ?>" aria-label="<?= lang('Pager.next') ?>">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
                 </a>
             </li>
             <li>
-                <a href="<?= $pager->getLast() ?>" aria-label="<?= lang('Pager.last') ?>">
-                    <span aria-hidden="true"><?= lang('Pager.last') ?></span>
+                <a class="page-link" href="<?= $pager->getLast() ?>" aria-label="<?= lang('Pager.last') ?>">
+                    <i class="fas fa-angle-double-right" aria-hidden="true"></i>
                 </a>
             </li>
         <?php endif ?>
+
     </ul>
+
 </nav>

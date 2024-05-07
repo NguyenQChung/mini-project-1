@@ -24,10 +24,10 @@ class Quan_ly extends BaseController
 
         if (!empty($searchTerm)) {
             // Thực hiện tìm kiếm với điều kiện tên người dùng chứa từ khóa tìm kiếm
-            $data['users'] = $dataUsers->like('name', $searchTerm)->orderBy('id', 'DESC')->paginate(10, 'group1');
+            $data['users'] = $dataUsers->where('role', 'employee')->like('name', $searchTerm)->orderBy('id', 'DESC')->paginate(10, 'group1');
         } else {
             // Nếu không có từ khóa tìm kiếm, lấy tất cả người dùng
-            $data['users'] = $dataUsers->orderBy('id', 'DESC')->paginate(10, 'group1');
+            $data['users'] = $dataUsers->where('role', 'employee')->orderBy('id', 'DESC')->paginate(10, 'group1');
         }
         $data['pager'] = $dataUsers->pager;
         $data['user'] = $this->user;

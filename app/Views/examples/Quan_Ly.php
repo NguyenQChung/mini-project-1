@@ -31,7 +31,7 @@
         <!-- Default box -->
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">List Employee</h3>
+                <h3 class="card-title">Danh Sách Nhân Viên</h3>
                 <div class="card-tools">
                     <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
                         <i class="fa fa-plus"></i>
@@ -55,22 +55,22 @@
                                     ID
                                 </th>
                                 <th style="width: 20%">
-                                    Name
+                                    Họ và Tên
                                 </th>
                                 <th style="width: 30%">
                                     Email
                                 </th>
                                 <th>
-                                    Avatar
+                                    Ảnh đại diện
                                 </th>
                                 <th style="width: 8%" class="text-center">
-                                    Role
+                                    Chức vụ
                                 </th>
                                 <th style="width: 20%">
                                     <form id="searchForm" class="form-inline" method="GET">
                                         <div class="input-group input-group-sm">
                                             <input id="inputSearch" class="form-control form-control-navbar"
-                                                type="search" placeholder="Search" aria-label="Search" name="h">
+                                                type="search" placeholder="Nhập Họ và Tên" aria-label="Search" name="h">
                                             <div class="input-group-append">
                                                 <button class="btn btn-navbar" type="submit">
                                                     <i class="fas fa-search"></i>
@@ -96,17 +96,17 @@
                                                 class="rounded-circle img-fluid" style="max-width: 20%; height: auto;" />
                                         <?php } ?>
                                     </td>
-                                    <td><?= $user['role'] ?></td>
+                                    <td><?= ($user['role'] === 'manager') ? 'Quản lý' : 'Nhân viên'; ?></td>
                                     <td class="project-actions text-right">
                                         <a href="#editEmployeeModal" class="btn btn-info btn-sm edit" data-toggle="modal">
                                             <i data-toggle="tooltip" class="fas fa-pencil-alt" title="Edit">
                                             </i>
-                                            Edit
+                                            Sửa
                                         </a>
                                         <a class="btn btn-danger btn-sm delete" data-toggle="modal" href="#">
                                             <i class="fas fa-trash">
                                             </i>
-                                            Delete
+                                            Xóa
                                         </a>
                                         <a class="btn btn-success btn-sm reset" data-toggle="modal" href="#">
                                             Reset
@@ -135,12 +135,12 @@
         <div class="modal-content">
             <form action="<?php echo base_url() . 'saveUser'; ?>" method="POST" enctype="multipart/form-data">
                 <div class="modal-header">
-                    <h4 class="modal-title">Add Employee</h4>
+                    <h4 class="modal-title">Thêm Nhân Viên</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label>Name</label>
+                        <label>Họ và Tên</label>
                         <input type="text" class="form-control" name="name" required>
                     </div>
                     <div class="form-group">
@@ -158,10 +158,10 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="role">Role:</label>
+                        <label for="role">Chức Vụ:</label>
                         <select class="form-control" id="role" name="role">
-                            <option value="employee">Employee</option>
-                            <option value="manager">Manager</option>
+                            <option value="employee">Nhân Viên</option>
+                            <option value="manager">Quản Lý</option>
                         </select>
                     </div>
                 </div>
@@ -179,13 +179,13 @@
         <div class="modal-content">
             <form action="<?php echo base_url() . "updateUser" ?>" method="POST" enctype="multipart/form-data">
                 <div class="modal-header">
-                    <h4 class="modal-title">Edit Employee</h4>
+                    <h4 class="modal-title">Sửa Thông Tin Nhân Viên</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body">
                     <input type="hidden" name="updateId" class="updateId">
                     <div class="form-group">
-                        <label>Name</label>
+                        <label>Họ và Tên</label>
                         <input type="text" class="form-control updateUsername" name="name" required>
                     </div>
                     <div class="form-group">
@@ -205,10 +205,10 @@
                         <img src="" alt="User Image" class="img-thumbnail updateAvatar" style="width: 200px;">
                     </div>
                     <div class="form-group">
-                        <label for="role">Role:</label>
+                        <label for="role">Chức vụ :</label>
                         <select class="form-control updateRole" id="role" name="role">
-                            <option value="employee">Employee</option>
-                            <option value="manager">Manager</option>
+                            <option value="employee">Nhân Viên</option>
+                            <option value="manager">Quản Lý</option>
                         </select>
                     </div>
 

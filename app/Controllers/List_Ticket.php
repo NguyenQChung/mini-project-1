@@ -35,6 +35,12 @@ class List_Ticket extends BaseController
         $data['pager'] = $ticketModel->pager;
         $data['user'] = $this->user;
         $data['readOnly'] = ($this->user['role'] === 'manager') ? 'readonly' : ''; // Xác định trường hợp chỉ đọc
+        $currentPage = $ticketModel->pager->getCurrentPage();
+        $perPage = $ticketModel->pager->getPerPage();
+        $startIndex = $currentPage * $perPage;
+        $data['currentPage'] = isset($_GET['page_group1']) ? $_GET['page_group1'] : 1;
+        $data['perPage'] = $perPage;
+        $data['startIndex'] = $startIndex;
 
         return view('examples/list_Ticket', $data);
     }
